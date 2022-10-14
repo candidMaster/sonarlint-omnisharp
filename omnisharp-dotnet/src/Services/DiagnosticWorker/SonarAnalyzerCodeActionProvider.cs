@@ -29,12 +29,13 @@ namespace SonarLint.OmniSharp.DotNet.Services.DiagnosticWorker
     internal interface ISonarAnalyzerCodeActionProvider : ICodeActionProvider
     {
     }
-
-    // We want this provider to be used only by our custom diagnostic worker and not the "normal" OmniSharp workers,
-    // so we're exporting it using a different interface.
-    // However, we're reusing the OmniSharp <see cref="AbstractCodeActionProvider"/> class because it makes it easy to
-    // load assemblies from and extract diagnostic analyzers from them.
+    
+    /// <summary>
+    /// We are exporting it as <see cref="ICodeActionProvider"/> so that OmniSharp could pick up our code fixes when
+    /// executing <see cref="Services.QuickFixesService"/>
+    /// </summary>
     [Export(typeof(ISonarAnalyzerCodeActionProvider)), Shared]
+    [Export(typeof(ICodeActionProvider))]
     internal class SonarAnalyzerCodeActionProvider : AbstractCodeActionProvider, ISonarAnalyzerCodeActionProvider
     {
         [ImportingConstructor]
