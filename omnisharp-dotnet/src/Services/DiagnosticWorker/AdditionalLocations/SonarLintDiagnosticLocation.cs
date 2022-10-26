@@ -18,7 +18,10 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
+using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
+using Microsoft.CodeAnalysis;
 using OmniSharp.Models.Diagnostics;
 using OmniSharp.Models.V2.CodeActions;
 
@@ -34,5 +37,7 @@ namespace SonarLint.OmniSharp.DotNet.Services.DiagnosticWorker.AdditionalLocatio
     {
         public ICodeLocation[] AdditionalLocations { get; set; }
         public ICollection<RunCodeActionResponse> CodeFixes { get; set; } = new List<RunCodeActionResponse>();
+
+        [NonSerialized] public Diagnostic OriginalDiagnostic;
     }
 }

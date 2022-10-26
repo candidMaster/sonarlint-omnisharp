@@ -43,7 +43,7 @@ using SonarLint.OmniSharp.DotNet.Services.DiagnosticWorker.AdditionalLocations;
 
 namespace SonarLint.OmniSharp.DotNet.Services.Services
 {
-    [OmniSharpEndpoint(SonarLintCodeCheckWithQuickFixesService.ServiceEndpoint, typeof(SonarLintCodeCheckWithQuickFixesRequest2), typeof(SonarLintCodeCheckWithQuickFixesResponse2))]
+    [OmniSharpEndpoint(SonarLintCodeCheckWithQuickFixesService2.ServiceEndpoint, typeof(SonarLintCodeCheckWithQuickFixesRequest2), typeof(SonarLintCodeCheckWithQuickFixesResponse2))]
     internal class SonarLintCodeCheckWithQuickFixesRequest2 : Request
     {
     }
@@ -102,30 +102,32 @@ namespace SonarLint.OmniSharp.DotNet.Services.Services
             //     return Array.Empty<AvailableCodeAction>();
             // }
 
-            var codeActionsPerDiagnostic = new Dictionary<string, List<CodeAction>>();
+            var codeActionsPerDiagnostic = new Dictionary<Diagnostic, List<CodeAction>>();
+            var method = GetType().BaseType.GetMethod("AppendFixesAsync", BindingFlags.NonPublic | BindingFlags.Instance);
 
             foreach (var diagnostic in diagnostics)
             {
-                codeActionsPerDiagnostic[diagnostic.Id] = new List<CodeAction>();
-
+                codeActionsPerDiagnostic[diagnostic] = new List<CodeAction>();
+                
                 var diagnosticSpan = diagnostic.Location.SourceSpan;
-
-                this.GetType().GetMethod("AppendFixesAsync")
-                    ?.Invoke(this,
+                
+                var awaitable = (Task) method.Invoke(this,
                     new object[]
                     {
                         document,
                         diagnosticSpan,
-                        new []{diagnostic},
-                        codeActionsPerDiagnostic[diagnostic.Id]
+                        new[] {diagnostic},
+                        codeActionsPerDiagnostic[diagnostic]
                     });
+
+                await awaitable;
             }
-            
+
             var diagnosticLocations = diagnosticsToCodeLocationsConverter.Convert(diagnosticsWithProjects, fileName);
             
-            foreach (var diagnosticLocation in diagnosticLocations)
+            foreach (SonarLintDiagnosticLocation diagnosticLocation in diagnosticLocations)
             {
-                await AddCodeFixesToDiagnosticLocation(diagnosticLocation, fileName, codeActionsPerDiagnostic[diagnosticLocation.Id]);
+                await AddCodeFixesToDiagnosticLocation(diagnosticLocation, fileName, codeActionsPerDiagnostic[diagnosticLocation.OriginalDiagnostic]);
             }
 
             return new SonarLintCodeCheckWithQuickFixesResponse2 { QuickFixes = diagnosticLocations };

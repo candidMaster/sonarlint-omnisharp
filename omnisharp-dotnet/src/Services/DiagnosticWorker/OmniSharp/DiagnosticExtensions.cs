@@ -40,7 +40,8 @@ namespace OmniSharp.Helpers
                     .Where(x => _tagFilter.Contains(x))
                     .ToArray(),
                 Id = diagnostic.Id,
-                AdditionalLocations = diagnostic.ToAdditionalLocations()
+                AdditionalLocations = diagnostic.ToAdditionalLocations(),
+                OriginalDiagnostic = diagnostic
             };
         }
 
