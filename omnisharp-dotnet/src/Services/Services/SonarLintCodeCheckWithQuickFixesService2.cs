@@ -22,6 +22,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Composition;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -82,12 +83,21 @@ namespace SonarLint.OmniSharp.DotNet.Services.Services
 
         public override async Task<SonarLintCodeCheckWithQuickFixesResponse2> Handle(SonarLintCodeCheckWithQuickFixesRequest2 request)
         {
+            var stopWatch = Stopwatch.StartNew();
+            
             if (string.IsNullOrEmpty(request.FileName))
             {
                 return await GetResponseFromDiagnostics(fileName: null);
             }
 
-            return await GetResponseFromDiagnostics(request.FileName);
+            var res = await GetResponseFromDiagnostics(request.FileName);
+            
+            stopWatch.Stop();
+            
+            var s = $"SonarLintCodeCheckWithQuickFixesService2: {stopWatch.ElapsedMilliseconds}, number of issues: {res.QuickFixes.Count()}, number of fixes: {res.QuickFixes.Sum(x=> x.CodeFixes.Count())}";
+            
+            File.AppendAllLines(@"C:\Users\rita.gorokhod\Desktop\perf.txt", new [] {s});
+            return res;
         }
 
         private async Task<SonarLintCodeCheckWithQuickFixesResponse2> GetResponseFromDiagnostics(string fileName)
