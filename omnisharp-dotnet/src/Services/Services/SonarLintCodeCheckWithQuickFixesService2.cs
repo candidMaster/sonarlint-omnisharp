@@ -134,10 +134,11 @@ namespace SonarLint.OmniSharp.DotNet.Services.Services
                     var directory = Path.GetDirectoryName(fileName);
                     var operations = await codeAction.GetOperationsAsync(CancellationToken.None);
 
-                    foreach (var operation in operations.OfType<ApplyChangesOperation>())
+                    foreach (var solutionAfterOperation in operations.OfType<ApplyChangesOperation>().Select(x=> x.ChangedSolution))
                     {
-                        var fileChangesResult = await GetFileChangesAsync(operation.ChangedSolution, solution, directory, true, false);
+                        var fileChangesResult = await GetFileChangesAsync(solutionAfterOperation, solution, directory, true, false);
                         changes.AddRange(fileChangesResult.FileChanges);
+                        solution = solutionAfterOperation;
                     }
                 }
                 
