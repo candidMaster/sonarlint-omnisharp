@@ -22,6 +22,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Composition;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -40,6 +41,7 @@ using OmniSharp.Roslyn.CSharp.Services.Diagnostics;
 using OmniSharp.Roslyn.CSharp.Services.Refactoring.V2;
 using SonarLint.OmniSharp.DotNet.Services.DiagnosticWorker;
 using SonarLint.OmniSharp.DotNet.Services.DiagnosticWorker.AdditionalLocations;
+using SonarLint.OmniSharp.DotNet.Services.DiagnosticWorker.QuickFixes;
 
 namespace SonarLint.OmniSharp.DotNet.Services.Services
 {
@@ -142,9 +144,9 @@ namespace SonarLint.OmniSharp.DotNet.Services.Services
             }
         }
         
-        private async Task<RunCodeActionResponse> GetCodeFix(CodeAction availableCodeAction, string fileName)
+        private async Task<CodeFix> GetCodeFix(CodeAction availableCodeAction, string fileName)
         {
-            var changes = new List<FileOperationResponse>();
+            var fixes = new List<Fix>();
             try
             {
                 var operations = await availableCodeAction.GetOperationsAsync(CancellationToken.None);
@@ -158,7 +160,11 @@ namespace SonarLint.OmniSharp.DotNet.Services.Services
                     {
                         var fileChangesResult = await GetFileChangesAsync(applyChangesOperation.ChangedSolution, solution, directory, true, false);
 
-                        changes.AddRange(fileChangesResult.FileChanges);
+                        Debug.Assert(fileChangesResult.FileChanges.All(c => c is ModifiedFileResponse));
+
+                        var fileFixes = fileChangesResult.FileChanges.Select(c => ((ModifiedFileResponse)c).ToFix());
+
+                        fixes.AddRange(fileFixes);
                         solution = fileChangesResult.Solution;
                     }
                     else
@@ -170,12 +176,13 @@ namespace SonarLint.OmniSharp.DotNet.Services.Services
             }
             catch (Exception e)
             {
-              //  Logger.LogError(e, $"An error occurred when running a code action: {availableCodeAction.GetTitle()}");
+               Logger.LogError(e, $"An error occurred when running a code action: {availableCodeAction.Title}");
             }
 
-            return new RunCodeActionResponse
+            return new CodeFix
             {
-                Changes = changes
+                Message = availableCodeAction.Title,
+                Fixes = fixes
             };
         }
     }

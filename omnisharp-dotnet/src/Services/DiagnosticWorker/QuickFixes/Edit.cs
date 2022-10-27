@@ -18,27 +18,17 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
-using System;
+using OmniSharp.Models;
 using System.Collections.Generic;
-using System.Text.Json.Serialization;
-using Microsoft.CodeAnalysis;
-using OmniSharp.Models.Diagnostics;
-using OmniSharp.Models.V2.CodeActions;
-using SonarLint.OmniSharp.DotNet.Services.DiagnosticWorker.QuickFixes;
 
-namespace SonarLint.OmniSharp.DotNet.Services.DiagnosticWorker.AdditionalLocations
+namespace SonarLint.OmniSharp.DotNet.Services.DiagnosticWorker.QuickFixes
 {
-    /// <summary>
-    /// Extends <see cref="DiagnosticLocation"/> and provides additional diagnostic locations.
-    /// </summary>
-    /// <remarks>
-    /// Additional locations are excluded from <see cref="DiagnosticLocation.Equals"/>
-    /// </remarks>
-    internal class SonarLintDiagnosticLocation : DiagnosticLocation, ICodeLocation
+    internal class Edit
     {
-        public ICodeLocation[] AdditionalLocations { get; set; }
-        public ICollection<CodeFix> CodeFixes { get; set; } = new List<CodeFix>();
-
-        [NonSerialized] public Diagnostic OriginalDiagnostic;
+        public int StartLine { get; set; }
+        public int StartColumn { get; set; }
+        public int EndLine { get; set; }
+        public int EndColumn { get; set; }
+        public string Text { get; set; }
     }
 }

@@ -39,6 +39,7 @@ using OmniSharp.Roslyn.CSharp.Services.Diagnostics;
 using OmniSharp.Roslyn.CSharp.Services.Refactoring.V2;
 using SonarLint.OmniSharp.DotNet.Services.DiagnosticWorker;
 using SonarLint.OmniSharp.DotNet.Services.DiagnosticWorker.AdditionalLocations;
+using SonarLint.OmniSharp.DotNet.Services.DiagnosticWorker.QuickFixes;
 
 namespace SonarLint.OmniSharp.DotNet.Services.Services
 {
@@ -137,7 +138,7 @@ namespace SonarLint.OmniSharp.DotNet.Services.Services
 
             return availableActions;
         }
-        private async Task<RunCodeActionResponse> GetCodeFix(AvailableCodeAction availableCodeAction, string fileName)
+        private async Task<CodeFix> GetCodeFix(AvailableCodeAction availableCodeAction, string fileName)
         {
             var changes = new List<FileOperationResponse>();
             try
@@ -168,9 +169,10 @@ namespace SonarLint.OmniSharp.DotNet.Services.Services
                 Logger.LogError(e, $"An error occurred when running a code action: {availableCodeAction.GetTitle()}");
             }
 
-            return new RunCodeActionResponse
+            return new CodeFix
             {
-                Changes = changes
+                Message = availableCodeAction.GetTitle()//,
+                //Changes = changes
             };
         }
     }
