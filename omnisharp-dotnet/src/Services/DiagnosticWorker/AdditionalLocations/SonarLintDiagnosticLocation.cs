@@ -37,7 +37,7 @@ namespace SonarLint.OmniSharp.DotNet.Services.DiagnosticWorker.AdditionalLocatio
     internal class SonarLintDiagnosticLocation : DiagnosticLocation, ICodeLocation
     {
         public ICodeLocation[] AdditionalLocations { get; set; }
-        public ICollection<CodeFix> CodeFixes { get; set; } = new List<CodeFix>();
+        public List<CodeFix> CodeFixes { get; set; } = new();
 
         [NonSerialized] public Diagnostic OriginalDiagnostic;
     }

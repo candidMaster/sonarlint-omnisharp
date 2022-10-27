@@ -20,6 +20,9 @@
 
 using System.Collections.Immutable;
 using System.Composition;
+using System.Diagnostics;
+using System.IO;
+using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.CodeAnalysis;
 using OmniSharp.Mef;
@@ -60,6 +63,8 @@ namespace SonarLint.OmniSharp.DotNet.Services.Services
 
         public async Task<QuickFixResponse> Handle(SonarLintCodeCheckRequest request)
         {
+            var stopWatch = Stopwatch.StartNew();
+            
             if (string.IsNullOrEmpty(request.FileName))
             {
                 var allDiagnostics = await diagnosticWorker.GetAllDiagnosticsAsync();
@@ -69,7 +74,15 @@ namespace SonarLint.OmniSharp.DotNet.Services.Services
 
             var diagnostics = await diagnosticWorker.GetDiagnostics(ImmutableArray.Create(request.FileName));
 
-            return GetResponseFromDiagnostics(diagnostics, request.FileName);
+            var res = GetResponseFromDiagnostics(diagnostics, request.FileName);
+            
+            stopWatch.Stop();
+
+            var s = $"CodeCheck: {stopWatch.ElapsedMilliseconds}, number of issues: {res.QuickFixes.Count()}";
+            
+            File.AppendAllLines(@"C:\Users\rita.gorokhod\Desktop\perf.txt", new [] {s});
+
+            return res;
         }
 
         private QuickFixResponse GetResponseFromDiagnostics(ImmutableArray<DocumentDiagnostics> diagnostics, string fileName)
