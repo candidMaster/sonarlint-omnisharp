@@ -301,7 +301,7 @@ class OmnisharpIntegrationTests {
 
   @Test
   // FIXME
-  @DisabledOnOs(OS.WINDOWS)
+//  @DisabledOnOs(OS.WINDOWS)
   void analyzeMixedSolutionWithNet6Omnisharp(@TempDir Path tmpDir) throws Exception {
     Path baseDir = prepareTestSolutionAndRestore(tmpDir, "SolutionMixingCoreAndFramework");
 
