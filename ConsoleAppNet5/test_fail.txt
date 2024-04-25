@@ -1,0 +1,1179 @@
++++++++++++
+/tmp/junit3570845038542214616
+/tmp/junit3570845038542214616/sonarlintHome
+Loaded 1 plugins
+  * C# Code Quality and Security (Omnisharp) 1.19.0.86083 (csharp)
+Creating container for module 'solution1'
+HIIIIIII
+/workspaces/sonarlint-omnisharp/its/src/test/projects/DotNet6Project
+/workspaces/sonarlint-omnisharp/its/src/test/projects/DotNet6Project
+Creating transient module container
+Start analysis
+Index files
+Language of file "file:///workspaces/sonarlint-omnisharp/its/src/test/projects/DotNet6Project/DotNet6Project/Program.cs" is detected to be "C#"
+1 file indexed
+Execute Sensor: OmniSharp
+Starting OmniSharp...
+dotnet /workspaces/sonarlint-omnisharp/omnisharp/net6/OmniSharp.dll -v MsBuild:loadProjectsOnDemand=false DotNet:enablePackageRestore=false --encoding utf-8 -s /workspaces/sonarlint-omnisharp/its/src/test/projects/DotNet6Project --plugin /tmp/junit3570845038542214616/sonarlintHome/work/.sonarlinttmp_3804605157061835563/slServices/SonarLint.OmniSharp.DotNet.Services.dll
+Process 38278 started
+Omnisharp: [DEBUG] Loaded OmniSharp.Cake, Version=1.39.10.0, Culture=neutral, PublicKeyToken=7e5bf7b3b470b509
+Omnisharp: [DEBUG] Loaded OmniSharp.DotNetTest, Version=1.39.10.0, Culture=neutral, PublicKeyToken=7e5bf7b3b470b509
+Omnisharp: [DEBUG] Loaded OmniSharp.Host, Version=1.39.10.0, Culture=neutral, PublicKeyToken=7e5bf7b3b470b509
+Omnisharp: [DEBUG] Loaded OmniSharp.MSBuild, Version=1.39.10.0, Culture=neutral, PublicKeyToken=7e5bf7b3b470b509
+Omnisharp: [DEBUG] Loaded OmniSharp.Roslyn, Version=1.39.10.0, Culture=neutral, PublicKeyToken=7e5bf7b3b470b509
+Omnisharp: [DEBUG] Loaded OmniSharp.Roslyn.CSharp, Version=1.39.10.0, Culture=neutral, PublicKeyToken=7e5bf7b3b470b509
+Omnisharp: [DEBUG] Loaded OmniSharp.Script, Version=1.39.10.0, Culture=neutral, PublicKeyToken=7e5bf7b3b470b509
+Omnisharp: [DEBUG] Loaded OmniSharp.Shared, Version=1.39.10.0, Culture=neutral, PublicKeyToken=7e5bf7b3b470b509
+Omnisharp: [INFORMATION] Starting OmniSharp on Unknown 0.0 (Unknown)
+Omnisharp: [INFORMATION] Checking the 'DOTNET_ROOT' environment variable to find a .NET SDK
+Omnisharp: [INFORMATION] DotNetPath set to /usr/share/dotnet/dotnet
+Omnisharp: [DEBUG] .NET SDK requires MSBuild instances version 17.8.3 or higher
+Omnisharp: [INFORMATION] Located 1 MSBuild instance(s)
+            1: .NET Core SDK 8.0.203 17.9.6 - "/usr/share/dotnet/sdk/8.0.203/"
+Omnisharp: [DEBUG] MSBuild instance .NET Core SDK 8.0.203 17.9.6 scored at -2147483648
+Omnisharp: [INFORMATION] Registered MSBuild instance: .NET Core SDK 8.0.203 17.9.6 - "/usr/share/dotnet/sdk/8.0.203/"
+Omnisharp: [DEBUG] Starting with OmniSharp options: {"RoslynExtensionsOptions":{"EnableDecompilationSupport":false,"EnableAnalyzersSupport":false,"EnableImportCompletion":false,"EnableAsyncCompletion":false,"DocumentAnalysisTimeoutMs":30000,"DiagnosticWorkersThreadCount":1,"AnalyzeOpenDocumentsOnly":false,"InlayHintsOptions":{"EnableForParameters":false,"ForLiteralParameters":false,"ForIndexerParameters":false,"ForObjectCreationParameters":false,"ForOtherParameters":false,"SuppressForParametersThatDifferOnlyBySuffix":false,"SuppressForParametersThatMatchMethodIntent":false,"SuppressForParametersThatMatchArgumentName":false,"EnableForTypes":false,"ForImplicitVariableTypes":false,"ForLambdaParameterTypes":false,"ForImplicitObjectCreation":false},"LocationPaths":null},"FormattingOptions":{"OrganizeImports":false,"EnableEditorConfigSupport":false,"NewLine":"\n","UseTabs":false,"TabSize":4,"IndentationSize":4,"SpacingAfterMethodDeclarationName":false,"SeparateImportDirectiveGroups":false,"SpaceWithinMethodDeclarationParenthesis":false,"SpaceBetweenEmptyMethodDeclarationParentheses":false,"SpaceAfterMethodCallName":false,"SpaceWithinMethodCallParentheses":false,"SpaceBetweenEmptyMethodCallParentheses":false,"SpaceAfterControlFlowStatementKeyword":true,"SpaceWithinExpressionParentheses":false,"SpaceWithinCastParentheses":false,"SpaceWithinOtherParentheses":false,"SpaceAfterCast":false,"SpaceBeforeOpenSquareBracket":false,"SpaceBetweenEmptySquareBrackets":false,"SpaceWithinSquareBrackets":false,"SpaceAfterColonInBaseTypeDeclaration":true,"SpaceAfterComma":true,"SpaceAfterDot":false,"SpaceAfterSemicolonsInForStatement":true,"SpaceBeforeColonInBaseTypeDeclaration":true,"SpaceBeforeComma":false,"SpaceBeforeDot":false,"SpaceBeforeSemicolonsInForStatement":false,"SpacingAroundBinaryOperator":"single","IndentBraces":false,"IndentBlock":true,"IndentSwitchSection":true,"IndentSwitchCaseSection":true,"IndentSwitchCaseSectionWhenBlock":true,"LabelPositioning":"oneLess","WrappingPreserveSingleLine":true,"WrappingKeepStatementsOnSingleLine":true,"NewLinesForBracesInTypes":true,"NewLinesForBracesInMethods":true,"NewLinesForBracesInProperties":true,"NewLinesForBracesInAccessors":true,"NewLinesForBracesInAnonymousMethods":true,"NewLinesForBracesInControlBlocks":true,"NewLinesForBracesInAnonymousTypes":true,"NewLinesForBracesInObjectCollectionArrayInitializers":true,"NewLinesForBracesInLambdaExpressionBody":true,"NewLineForElse":true,"NewLineForCatch":true,"NewLineForFinally":true,"NewLineForMembersInObjectInit":true,"NewLineForMembersInAnonymousTypes":true,"NewLineForClausesInQuery":true},"FileOptions":{"SystemExcludeSearchPatterns":["**/node_modules/**/*","**/bin/**/*","**/obj/**/*","**/.git/**/*"],"ExcludeSearchPatterns":[]},"RenameOptions":{"RenameOverloads":false,"RenameInStrings":false,"RenameInComments":false},"ImplementTypeOptions":{"InsertionBehavior":0,"PropertyGenerationBehavior":0},"DotNetCliOptions":{"LocationPaths":null},"Plugins":{"LocationPaths":null}}
+Omnisharp: [INFORMATION] Invoking Workspace Options Provider: OmniSharp.Roslyn.CSharp.Services.CSharpFormattingWorkspaceOptionsProvider, Order: 0
+Omnisharp: [INFORMATION] Detecting Cake files in '/workspaces/sonarlint-omnisharp/its/src/test/projects/DotNet6Project/'.
+Omnisharp: [INFORMATION] Did not find any Cake files
+Omnisharp: [DEBUG] MSBuild environment:
+Mode: Standalone
+RunningTests: False
+RunningInVisualStudio: False
+MSBuildToolsDirectory32: /usr/share/dotnet/sdk/8.0.203
+MSBuildToolsDirectory64: /usr/share/dotnet/sdk/8.0.203
+MSBuildSDKsPath: /usr/share/dotnet/sdk/8.0.203/Sdks
+CurrentMSBuildConfigurationFile: /usr/share/dotnet/sdk/8.0.203/MSBuild.dll.config
+CurrentMSBuildExePath: /usr/share/dotnet/sdk/8.0.203/MSBuild.dll
+CurrentMSBuildToolsDirectory: /usr/share/dotnet/sdk/8.0.203
+VisualStudioInstallRootDirectory:
+MSBuildExtensionsPath: /usr/share/dotnet/sdk/8.0.203
+
+Omnisharp: [INFORMATION] Detecting projects in '/workspaces/sonarlint-omnisharp/its/src/test/projects/DotNet6Project/DotNet6Project.sln'.
+Omnisharp: [DEBUG] Parsing ProjectConfigurationPlatforms of '/workspaces/sonarlint-omnisharp/its/src/test/projects/DotNet6Project/DotNet6Project.sln'.
+Omnisharp: [INFORMATION] Queue project update for '/workspaces/sonarlint-omnisharp/its/src/test/projects/DotNet6Project/DotNet6Project/DotNet6Project.csproj'
+Omnisharp: [INFORMATION] Detecting CSX files in '/workspaces/sonarlint-omnisharp/its/src/test/projects/DotNet6Project/'.
+Omnisharp: [INFORMATION] Did not find any CSX files
+Omnisharp: [INFORMATION] Configuration finished.
+Omnisharp: [INFORMATION] Omnisharp server running using Stdio at location '/workspaces/sonarlint-omnisharp/its/src/test/projects/DotNet6Project/' on host -1.
+{"Event":"started","Body":null,"Seq":28,"Type":"event"}
+OmniSharp successfully started
+Omnisharp: [INFORMATION] Loading project: /workspaces/sonarlint-omnisharp/its/src/test/projects/DotNet6Project/DotNet6Project/DotNet6Project.csproj
+Omnisharp: [INFORMATION] Successfully loaded project file '/workspaces/sonarlint-omnisharp/its/src/test/projects/DotNet6Project/DotNet6Project/DotNet6Project.csproj'.
+{"Event":"MsBuildProjectDiagnostics","Body":{"FileName":"/workspaces/sonarlint-omnisharp/its/src/test/projects/DotNet6Project/DotNet6Project/DotNet6Project.csproj","Warnings":[],"Errors":[]},"Seq":31,"Type":"event"}
+Omnisharp: [INFORMATION] Adding project '/workspaces/sonarlint-omnisharp/its/src/test/projects/DotNet6Project/DotNet6Project/DotNet6Project.csproj'
+Omnisharp: [INFORMATION] Update project: DotNet6Project
+Omnisharp: [DEBUG] .editorconfig files were configured by the project DotNet6Project but will not be respected because the feature is switched off in OmniSharp. Enable .editorconfig support in OmniSharp to take advantage of them.
+{"Event":"ProjectConfiguration","Body":{"ProjectId":"d426af11-5650-4cef-be28-fbabcafcb4db","SessionId":"-1642902940","OutputKind":0,"ProjectCapabilities":["GenerateDocumentationFile","CSharp","Managed","ReferencesFolder","LanguageService","RelativePathDerivedDefaultNamespace","AssemblyReferences","COMReferences","ProjectReferences","SharedProjectReferences","OutputGroups","AllTargetOutputGroups","VisualStudioWellKnownOutputGroups","SingleFileGenerators","DeclaredSourceItems","UserSourceItems","CrossPlatformExecutable","SupportsHotReload","Pack","NetSdkOCIImageBuild"],"TargetFrameworks":["net6.0"],"SdkVersion":"10455523","References":[],"FileExtensions":["-1257278712"],"FileCounts":[4],"SdkStyleProject":true},"Seq":35,"Type":"event"}
+{"Event":"ProjectAdded","Body":{"MsBuildProject":{"ProjectGuid":"00000000-0000-0000-0000-000000000000","Path":"/workspaces/sonarlint-omnisharp/its/src/test/projects/DotNet6Project/DotNet6Project/DotNet6Project.csproj","AssemblyName":"DotNet6Project","TargetPath":"/workspaces/sonarlint-omnisharp/its/src/test/projects/DotNet6Project/DotNet6Project/bin/Debug/net6.0/DotNet6Project.dll","TargetFramework":".NETCoreApp,Version=v6.0","SourceFiles":["/workspaces/sonarlint-omnisharp/its/src/test/projects/DotNet6Project/DotNet6Project/Program.cs","/workspaces/sonarlint-omnisharp/its/src/test/projects/DotNet6Project/DotNet6Project/obj/Debug/net6.0/DotNet6Project.GlobalUsings.g.cs","/workspaces/sonarlint-omnisharp/its/src/test/projects/DotNet6Project/DotNet6Project/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs","/workspaces/sonarlint-omnisharp/its/src/test/projects/DotNet6Project/DotNet6Project/obj/Debug/net6.0/DotNet6Project.AssemblyInfo.cs"],"TargetFrameworks":[{"Name":".NETCoreApp","FriendlyName":".NETCoreApp","ShortName":"net6.0"}],"OutputPath":"bin\\Debug/net6.0/","IntermediateOutputPath":"obj\\Debug/net6.0/","Configuration":"Debug","Platform":"AnyCPU","IsExe":true,"IsUnityProject":false}},"Seq":36,"Type":"event"}
+Projects successfully loaded
+{"Event":"ProjectChanged","Body":{"MsBuildProject":{"ProjectGuid":"00000000-0000-0000-0000-000000000000","Path":"/workspaces/sonarlint-omnisharp/its/src/test/projects/DotNet6Project/DotNet6Project/DotNet6Project.csproj","AssemblyName":"DotNet6Project","TargetPath":"/workspaces/sonarlint-omnisharp/its/src/test/projects/DotNet6Project/DotNet6Project/bin/Debug/net6.0/DotNet6Project.dll","TargetFramework":".NETCoreApp,Version=v6.0","SourceFiles":["/workspaces/sonarlint-omnisharp/its/src/test/projects/DotNet6Project/DotNet6Project/Program.cs","/workspaces/sonarlint-omnisharp/its/src/test/projects/DotNet6Project/DotNet6Project/obj/Debug/net6.0/DotNet6Project.GlobalUsings.g.cs","/workspaces/sonarlint-omnisharp/its/src/test/projects/DotNet6Project/DotNet6Project/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs","/workspaces/sonarlint-omnisharp/its/src/test/projects/DotNet6Project/DotNet6Project/obj/Debug/net6.0/DotNet6Project.AssemblyInfo.cs"],"TargetFrameworks":[{"Name":".NETCoreApp","FriendlyName":".NETCoreApp","ShortName":"net6.0"}],"OutputPath":"bin\\Debug/net6.0/","IntermediateOutputPath":"obj\\Debug/net6.0/","Configuration":"Debug","Platform":"AnyCPU","IsExe":true,"IsUnityProject":false}},"Seq":37,"Type":"event"}
+Omnisharp: [DEBUG] ************ Request ************
+{
+  "Type": "request",
+  "Seq": 1,
+  "Command": "/sonarlint/config",
+  "Arguments": {
+    "activeRules": [
+      {
+        "ruleId": "S4200"
+      },
+      {
+        "ruleId": "S4201"
+      },
+      {
+        "ruleId": "S2386"
+      },
+      {
+        "ruleId": "S5773"
+      },
+      {
+        "ruleId": "S3597"
+      },
+      {
+        "ruleId": "S3598"
+      },
+      {
+        "ruleId": "S3236"
+      },
+      {
+        "ruleId": "S3358"
+      },
+      {
+        "ruleId": "S3237"
+      },
+      {
+        "ruleId": "S5659"
+      },
+      {
+        "ruleId": "S1066"
+      },
+      {
+        "ruleId": "S1186"
+      },
+      {
+        "ruleId": "S4581"
+      },
+      {
+        "ruleId": "S1185"
+      },
+      {
+        "ruleId": "S3251"
+      },
+      {
+        "ruleId": "S3241"
+      },
+      {
+        "ruleId": "S3363"
+      },
+      {
+        "ruleId": "S4210"
+      },
+      {
+        "ruleId": "S2275"
+      },
+      {
+        "ruleId": "S4211"
+      },
+      {
+        "ruleId": "S3244"
+      },
+      {
+        "ruleId": "S5542"
+      },
+      {
+        "ruleId": "S3246"
+      },
+      {
+        "ruleId": "S4456"
+      },
+      {
+        "ruleId": "S3247"
+      },
+      {
+        "ruleId": "S5547"
+      },
+      {
+        "ruleId": "S3005"
+      },
+      {
+        "ruleId": "S3249"
+      },
+      {
+        "ruleId": "S1155"
+      },
+      {
+        "ruleId": "S3450"
+      },
+      {
+        "ruleId": "S3451"
+      },
+      {
+        "ruleId": "S4663"
+      },
+      {
+        "ruleId": "S3453"
+      },
+      {
+        "ruleId": "S2486"
+      },
+      {
+        "ruleId": "S2365"
+      },
+      {
+        "ruleId": "S2123"
+      },
+      {
+        "ruleId": "S4423"
+      },
+      {
+        "ruleId": "S3456"
+      },
+      {
+        "ruleId": "S6603"
+      },
+      {
+        "ruleId": "S4545"
+      },
+      {
+        "ruleId": "S6602"
+      },
+      {
+        "ruleId": "S2368"
+      },
+      {
+        "ruleId": "S3457"
+      },
+      {
+        "ruleId": "S6605"
+      },
+      {
+        "ruleId": "S4426"
+      },
+      {
+        "ruleId": "S3458"
+      },
+      {
+        "ruleId": "S3217"
+      },
+      {
+        "ruleId": "S3459"
+      },
+      {
+        "ruleId": "S3218"
+      },
+      {
+        "ruleId": "S6607"
+      },
+      {
+        "ruleId": "S4428"
+      },
+      {
+        "ruleId": "S6609"
+      },
+      {
+        "ruleId": "S6608"
+      },
+      {
+        "ruleId": "S1048"
+      },
+      {
+        "ruleId": "S1168"
+      },
+      {
+        "ruleId": "S1163"
+      },
+      {
+        "ruleId": "S2251"
+      },
+      {
+        "ruleId": "S2372"
+      },
+      {
+        "ruleId": "S1172"
+      },
+      {
+        "ruleId": "S2252"
+      },
+      {
+        "ruleId": "S3220"
+      },
+      {
+        "ruleId": "S818"
+      },
+      {
+        "ruleId": "S6610"
+      },
+      {
+        "ruleId": "S3343"
+      },
+      {
+        "ruleId": "S3464"
+      },
+      {
+        "ruleId": "S4433"
+      },
+      {
+        "ruleId": "S2376"
+      },
+      {
+        "ruleId": "S6612"
+      },
+      {
+        "ruleId": "S3466"
+      },
+      {
+        "ruleId": "S3346"
+      },
+      {
+        "ruleId": "S6613"
+      },
+      {
+        "ruleId": "S2259"
+      },
+      {
+        "ruleId": "S6618"
+      },
+      {
+        "ruleId": "S6617"
+      },
+      {
+        "ruleId": "S1135"
+      },
+      {
+        "ruleId": "S1134"
+      },
+      {
+        "ruleId": "S1133"
+      },
+      {
+        "ruleId": "S2583"
+      },
+      {
+        "ruleId": "S2342",
+        "params": {
+          "flagsAttributeFormat": "^([A-Z]{1,3}[a-z0-9]+)*([A-Z]{2})?s$",
+          "format": "^([A-Z]{1,3}[a-z0-9]+)*([A-Z]{2})?$"
+        }
+      },
+      {
+        "ruleId": "S2222"
+      },
+      {
+        "ruleId": "S2344"
+      },
+      {
+        "ruleId": "S2223"
+      },
+      {
+        "ruleId": "S3433"
+      },
+      {
+        "ruleId": "S2345"
+      },
+      {
+        "ruleId": "S4524"
+      },
+      {
+        "ruleId": "S2346"
+      },
+      {
+        "ruleId": "S2225"
+      },
+      {
+        "ruleId": "S2589"
+      },
+      {
+        "ruleId": "S5856"
+      },
+      {
+        "ruleId": "S1144"
+      },
+      {
+        "ruleId": "S1264"
+      },
+      {
+        "ruleId": "S3440"
+      },
+      {
+        "ruleId": "S3442"
+      },
+      {
+        "ruleId": "S3443"
+      },
+      {
+        "ruleId": "S3444"
+      },
+      {
+        "ruleId": "S2234"
+      },
+      {
+        "ruleId": "S2114"
+      },
+      {
+        "ruleId": "S3445"
+      },
+      {
+        "ruleId": "S2115"
+      },
+      {
+        "ruleId": "S2479"
+      },
+      {
+        "ruleId": "S3447"
+      },
+      {
+        "ruleId": "S3449"
+      },
+      {
+        "ruleId": "S3329"
+      },
+      {
+        "ruleId": "S1118"
+      },
+      {
+        "ruleId": "S1117"
+      },
+      {
+        "ruleId": "S1116"
+      },
+      {
+        "ruleId": "S1479",
+        "params": {
+          "maximum": "30"
+        }
+      },
+      {
+        "ruleId": "S1110"
+      },
+      {
+        "ruleId": "S2681"
+      },
+      {
+        "ruleId": "S2201"
+      },
+      {
+        "ruleId": "S6800"
+      },
+      {
+        "ruleId": "S3897"
+      },
+      {
+        "ruleId": "S3776",
+        "params": {
+          "propertyThreshold": "3",
+          "threshold": "15"
+        }
+      },
+      {
+        "ruleId": "S2445"
+      },
+      {
+        "ruleId": "S3655"
+      },
+      {
+        "ruleId": "S6803"
+      },
+      {
+        "ruleId": "S2688"
+      },
+      {
+        "ruleId": "S3415"
+      },
+      {
+        "ruleId": "S2326"
+      },
+      {
+        "ruleId": "S2328"
+      },
+      {
+        "ruleId": "S1006"
+      },
+      {
+        "ruleId": "S1125"
+      },
+      {
+        "ruleId": "S1123"
+      },
+      {
+        "ruleId": "S1121"
+      },
+      {
+        "ruleId": "S1481"
+      },
+      {
+        "ruleId": "S2692"
+      },
+      {
+        "ruleId": "S2696"
+      },
+      {
+        "ruleId": "S4635"
+      },
+      {
+        "ruleId": "S2699"
+      },
+      {
+        "ruleId": "S3427"
+      },
+      {
+        "ruleId": "S2219"
+      },
+      {
+        "ruleId": "S1699"
+      },
+      {
+        "ruleId": "S1215"
+      },
+      {
+        "ruleId": "S1210"
+      },
+      {
+        "ruleId": "S1450"
+      },
+      {
+        "ruleId": "S3871"
+      },
+      {
+        "ruleId": "S3875"
+      },
+      {
+        "ruleId": "S3998"
+      },
+      {
+        "ruleId": "S3877"
+      },
+      {
+        "ruleId": "S3878"
+      },
+      {
+        "ruleId": "S2306"
+      },
+      {
+        "ruleId": "S1104"
+      },
+      {
+        "ruleId": "S3881"
+      },
+      {
+        "ruleId": "S2551"
+      },
+      {
+        "ruleId": "S3400"
+      },
+      {
+        "ruleId": "S3885"
+      },
+      {
+        "ruleId": "S3887"
+      },
+      {
+        "ruleId": "S2436",
+        "params": {
+          "maxMethod": "3",
+          "max": "2"
+        }
+      },
+      {
+        "ruleId": "S3889"
+      },
+      {
+        "ruleId": "S2437"
+      },
+      {
+        "ruleId": "S3971"
+      },
+      {
+        "ruleId": "S2761"
+      },
+      {
+        "ruleId": "S3972"
+      },
+      {
+        "ruleId": "S3973"
+      },
+      {
+        "ruleId": "S3610"
+      },
+      {
+        "ruleId": "S1206"
+      },
+      {
+        "ruleId": "S3981"
+      },
+      {
+        "ruleId": "S4830"
+      },
+      {
+        "ruleId": "S3984"
+      },
+      {
+        "ruleId": "S3626"
+      },
+      {
+        "ruleId": "S3869"
+      },
+      {
+        "ruleId": "S1656"
+      },
+      {
+        "ruleId": "S927"
+      },
+      {
+        "ruleId": "S2743"
+      },
+      {
+        "ruleId": "S3963"
+      },
+      {
+        "ruleId": "S3600"
+      },
+      {
+        "ruleId": "S2995"
+      },
+      {
+        "ruleId": "S2996"
+      },
+      {
+        "ruleId": "S2997"
+      },
+      {
+        "ruleId": "S2755"
+      },
+      {
+        "ruleId": "S3603"
+      },
+      {
+        "ruleId": "S3966"
+      },
+      {
+        "ruleId": "S3604"
+      },
+      {
+        "ruleId": "S2757"
+      },
+      {
+        "ruleId": "S1751"
+      },
+      {
+        "ruleId": "S1871"
+      },
+      {
+        "ruleId": "S907"
+      },
+      {
+        "ruleId": "S1764"
+      },
+      {
+        "ruleId": "S1643"
+      },
+      {
+        "ruleId": "S2970"
+      },
+      {
+        "ruleId": "S2971"
+      },
+      {
+        "ruleId": "S2857"
+      },
+      {
+        "ruleId": "S2737"
+      },
+      {
+        "ruleId": "S3949"
+      },
+      {
+        "ruleId": "S1854"
+      },
+      {
+        "ruleId": "S3928"
+      },
+      {
+        "ruleId": "S1862"
+      },
+      {
+        "ruleId": "S2953"
+      },
+      {
+        "ruleId": "S3923"
+      },
+      {
+        "ruleId": "S3925"
+      },
+      {
+        "ruleId": "S3926"
+      },
+      {
+        "ruleId": "S3927"
+      },
+      {
+        "ruleId": "S2925"
+      },
+      {
+        "ruleId": "S1848"
+      },
+      {
+        "ruleId": "S2930"
+      },
+      {
+        "ruleId": "S2933"
+      },
+      {
+        "ruleId": "S2934"
+      },
+      {
+        "ruleId": "S3903"
+      },
+      {
+        "ruleId": "S3904"
+      },
+      {
+        "ruleId": "S1607"
+      },
+      {
+        "ruleId": "S1939"
+      },
+      {
+        "ruleId": "S1944"
+      },
+      {
+        "ruleId": "S1940"
+      },
+      {
+        "ruleId": "S4070"
+      },
+      {
+        "ruleId": "S5034"
+      },
+      {
+        "ruleId": "S6588"
+      },
+      {
+        "ruleId": "S4061"
+      },
+      {
+        "ruleId": "S1905"
+      },
+      {
+        "ruleId": "S3060"
+      },
+      {
+        "ruleId": "S2094"
+      },
+      {
+        "ruleId": "S3063"
+      },
+      {
+        "ruleId": "S4143"
+      },
+      {
+        "ruleId": "S4144"
+      },
+      {
+        "ruleId": "S6580"
+      },
+      {
+        "ruleId": "S4275"
+      },
+      {
+        "ruleId": "S6575"
+      },
+      {
+        "ruleId": "S4035"
+      },
+      {
+        "ruleId": "S4277"
+      },
+      {
+        "ruleId": "S4158"
+      },
+      {
+        "ruleId": "S4159"
+      },
+      {
+        "ruleId": "S2190"
+      },
+      {
+        "ruleId": "S6420"
+      },
+      {
+        "ruleId": "S3397"
+      },
+      {
+        "ruleId": "S2187"
+      },
+      {
+        "ruleId": "S4487"
+      },
+      {
+        "ruleId": "S6422"
+      },
+      {
+        "ruleId": "S3398"
+      },
+      {
+        "ruleId": "S6424"
+      },
+      {
+        "ruleId": "S125"
+      },
+      {
+        "ruleId": "S110",
+        "params": {
+          "max": "5"
+        }
+      },
+      {
+        "ruleId": "S112"
+      },
+      {
+        "ruleId": "S4260"
+      },
+      {
+        "ruleId": "S3172"
+      },
+      {
+        "ruleId": "S6562"
+      },
+      {
+        "ruleId": "S6561"
+      },
+      {
+        "ruleId": "S2198"
+      },
+      {
+        "ruleId": "S6797"
+      },
+      {
+        "ruleId": "S4136"
+      },
+      {
+        "ruleId": "S3168"
+      },
+      {
+        "ruleId": "S4015"
+      },
+      {
+        "ruleId": "S6798"
+      },
+      {
+        "ruleId": "S3169"
+      },
+      {
+        "ruleId": "S4019"
+      },
+      {
+        "ruleId": "S101"
+      },
+      {
+        "ruleId": "S2290"
+      },
+      {
+        "ruleId": "S1199"
+      },
+      {
+        "ruleId": "S2291"
+      },
+      {
+        "ruleId": "S3260"
+      },
+      {
+        "ruleId": "S2292"
+      },
+      {
+        "ruleId": "S3261"
+      },
+      {
+        "ruleId": "S1075"
+      },
+      {
+        "ruleId": "S3262"
+      },
+      {
+        "ruleId": "S4583"
+      },
+      {
+        "ruleId": "S4220"
+      },
+      {
+        "ruleId": "S3010"
+      },
+      {
+        "ruleId": "S3011"
+      },
+      {
+        "ruleId": "S4586"
+      },
+      {
+        "ruleId": "S2166"
+      },
+      {
+        "ruleId": "S3376"
+      },
+      {
+        "ruleId": "S3256"
+      },
+      {
+        "ruleId": "S108"
+      },
+      {
+        "ruleId": "S107",
+        "params": {
+          "max": "7"
+        }
+      },
+      {
+        "ruleId": "S2183"
+      },
+      {
+        "ruleId": "S2184"
+      },
+      {
+        "ruleId": "S3263"
+      },
+      {
+        "ruleId": "S2053"
+      },
+      {
+        "ruleId": "S3264"
+      },
+      {
+        "ruleId": "S3265"
+      },
+      {
+        "ruleId": "S3267"
+      },
+      {
+        "ruleId": "S2178"
+      },
+      {
+        "ruleId": "S5445"
+      },
+      {
+        "ruleId": "S6419"
+      }
+    ]
+  }
+}
+Omnisharp: [DEBUG] ************  Response (72.1228ms) ************
+{
+  "Request_seq": 1,
+  "Command": "/sonarlint/config",
+  "Running": true,
+  "Success": true,
+  "Message": null,
+  "Body": true,
+  "Seq": 39,
+  "Type": "response"
+}
+Omnisharp: [DEBUG] ************ Request ************
+{
+  "Type": "request",
+  "Seq": 2,
+  "Command": "/updatebuffer",
+  "Arguments": {
+    "FileName": "/workspaces/sonarlint-omnisharp/its/src/test/projects/DotNet6Project/DotNet6Project/Program.cs",
+    "Buffer": "using System;\n\nnamespace ConsoleApp1\n{\n    class Program\n    {\n        private void Foo(string a)\n        {\n            Console.WriteLine(\"Hello World!\");\n        }\n    }\n}"
+  }
+}
+1 source file to be analyzed
+Omnisharp: [DEBUG] Updating file /workspaces/sonarlint-omnisharp/its/src/test/projects/DotNet6Project/DotNet6Project/Program.cs with new text:
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        private void Foo(string a)
+        {
+            Console.WriteLine("Hello World!");
+        }
+    }
+}
+Omnisharp: [DEBUG] ************  Response (53.1036ms) ************
+{
+  "Request_seq": 2,
+  "Command": "/updatebuffer",
+  "Running": true,
+  "Success": true,
+  "Message": null,
+  "Body": true,
+  "Seq": 42,
+  "Type": "response"
+}
+Omnisharp: [DEBUG] ************ Request ************
+{
+  "Type": "request",
+  "Seq": 3,
+  "Command": "/sonarlint/codecheck",
+  "Arguments": {
+    "FileName": "/workspaces/sonarlint-omnisharp/its/src/test/projects/DotNet6Project/DotNet6Project/Program.cs"
+  }
+}
+Omnisharp: [DEBUG] Exception in diagnostic analyzer.
+            analyzer: SonarAnalyzer.Rules.CSharp.BooleanLiteralUnnecessary
+            diagnostic: warning AD0001: Analyzer 'SonarAnalyzer.Rules.CSharp.BooleanLiteralUnnecessary' threw an exception of type 'System.NullReferenceException' with message 'Object reference not set to an instance of an object.'.
+Exception occurred with following context:
+Compilation: DotNet6Project
+
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SonarAnalyzer.Rules.BooleanLiteralUnnecessaryBase`1.<Initialize>b__9_0(SonarCompilationStartAnalysisContext x)
+   at SonarAnalyzer.AnalysisContext.SonarAnalysisContext.Execute[TSonarContext,TRoslynContext](TSonarContext context, Action`1 action, SyntaxTree sourceTree, GeneratedCodeRecognizer generatedCodeRecognizer)
+   at SonarAnalyzer.AnalysisContext.SonarAnalysisContext.<>c__DisplayClass24_0.<RegisterCompilationStartAction>b__0(CompilationStartAnalysisContext c)
+   at Microsoft.CodeAnalysis.Diagnostics.AnalyzerExecutor.<>c.<ExecuteCompilationStartActions>b__38_0(ValueTuple`2 data)
+   at Microsoft.CodeAnalysis.Diagnostics.AnalyzerExecutor.ExecuteAndCatchIfThrows_NoLock[TArg](DiagnosticAnalyzer analyzer, Action`1 analyze, TArg argument, Nullable`1 info, CancellationToken cancellationToken)
+-----
+
+Suppress the following diagnostics to disable this analyzer: S1125
+            exception: Object reference not set to an instance of an object.
+Omnisharp: [DEBUG] Exception in diagnostic analyzer.
+            analyzer: SonarAnalyzer.Rules.CSharp.UseCharOverloadOfStringMethods
+            diagnostic: warning AD0001: Analyzer 'SonarAnalyzer.Rules.CSharp.UseCharOverloadOfStringMethods' threw an exception of type 'System.NullReferenceException' with message 'Object reference not set to an instance of an object.'.
+Exception occurred with following context:
+Compilation: DotNet6Project
+
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SonarAnalyzer.Rules.UseCharOverloadOfStringMethodsBase`2.CompilationTargetsValidNetVersion(Compilation compilation)
+   at SonarAnalyzer.Rules.UseCharOverloadOfStringMethodsBase`2.<Initialize>b__5_0(SonarCompilationStartAnalysisContext start)
+   at SonarAnalyzer.AnalysisContext.SonarAnalysisContext.Execute[TSonarContext,TRoslynContext](TSonarContext context, Action`1 action, SyntaxTree sourceTree, GeneratedCodeRecognizer generatedCodeRecognizer)
+   at SonarAnalyzer.AnalysisContext.SonarAnalysisContext.<>c__DisplayClass24_0.<RegisterCompilationStartAction>b__0(CompilationStartAnalysisContext c)
+   at Microsoft.CodeAnalysis.Diagnostics.AnalyzerExecutor.<>c.<ExecuteCompilationStartActions>b__38_0(ValueTuple`2 data)
+   at Microsoft.CodeAnalysis.Diagnostics.AnalyzerExecutor.ExecuteAndCatchIfThrows_NoLock[TArg](DiagnosticAnalyzer analyzer, Action`1 analyze, TArg argument, Nullable`1 info, CancellationToken cancellationToken)
+-----
+
+Suppress the following diagnostics to disable this analyzer: S6610
+            exception: Object reference not set to an instance of an object.
+Omnisharp: [DEBUG] Exception in diagnostic analyzer.
+            analyzer: SonarAnalyzer.Rules.CSharp.UseUnixEpoch
+            diagnostic: warning AD0001: Analyzer 'SonarAnalyzer.Rules.CSharp.UseUnixEpoch' threw an exception of type 'System.NullReferenceException' with message 'Object reference not set to an instance of an object.'.
+Exception occurred with following context:
+Compilation: DotNet6Project
+
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SonarAnalyzer.Rules.UseUnixEpochBase`3.IsUnixEpochSupported(Compilation compilation)
+   at SonarAnalyzer.Rules.UseUnixEpochBase`3.<Initialize>b__10_0(SonarCompilationStartAnalysisContext c)
+   at SonarAnalyzer.AnalysisContext.SonarAnalysisContext.Execute[TSonarContext,TRoslynContext](TSonarContext context, Action`1 action, SyntaxTree sourceTree, GeneratedCodeRecognizer generatedCodeRecognizer)
+   at SonarAnalyzer.AnalysisContext.SonarAnalysisContext.<>c__DisplayClass24_0.<RegisterCompilationStartAction>b__0(CompilationStartAnalysisContext c)
+   at Microsoft.CodeAnalysis.Diagnostics.AnalyzerExecutor.<>c.<ExecuteCompilationStartActions>b__38_0(ValueTuple`2 data)
+   at Microsoft.CodeAnalysis.Diagnostics.AnalyzerExecutor.ExecuteAndCatchIfThrows_NoLock[TArg](DiagnosticAnalyzer analyzer, Action`1 analyze, TArg argument, Nullable`1 info, CancellationToken cancellationToken)
+-----
+
+Suppress the following diagnostics to disable this analyzer: S6588
+            exception: Object reference not set to an instance of an object.
+Omnisharp: [DEBUG] Exception in diagnostic analyzer.
+            analyzer: SonarAnalyzer.Rules.CSharp.BooleanLiteralUnnecessary
+            diagnostic: warning AD0001: Analyzer 'SonarAnalyzer.Rules.CSharp.BooleanLiteralUnnecessary' threw an exception of type 'System.NullReferenceException' with message 'Object reference not set to an instance of an object.'.
+Exception occurred with following context:
+Compilation: DotNet6Project
+
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SonarAnalyzer.Rules.BooleanLiteralUnnecessaryBase`1.<Initialize>b__9_0(SonarCompilationStartAnalysisContext x)
+   at SonarAnalyzer.AnalysisContext.SonarAnalysisContext.Execute[TSonarContext,TRoslynContext](TSonarContext context, Action`1 action, SyntaxTree sourceTree, GeneratedCodeRecognizer generatedCodeRecognizer)
+   at SonarAnalyzer.AnalysisContext.SonarAnalysisContext.<>c__DisplayClass24_0.<RegisterCompilationStartAction>b__0(CompilationStartAnalysisContext c)
+   at Microsoft.CodeAnalysis.Diagnostics.AnalyzerExecutor.<>c.<ExecuteCompilationStartActions>b__38_0(ValueTuple`2 data)
+   at Microsoft.CodeAnalysis.Diagnostics.AnalyzerExecutor.ExecuteAndCatchIfThrows_NoLock[TArg](DiagnosticAnalyzer analyzer, Action`1 analyze, TArg argument, Nullable`1 info, CancellationToken cancellationToken)
+-----
+
+Suppress the following diagnostics to disable this analyzer: S1125
+            exception: Object reference not set to an instance of an object.
+Omnisharp: [DEBUG] Exception in diagnostic analyzer.
+            analyzer: SonarAnalyzer.Rules.CSharp.UseCharOverloadOfStringMethods
+            diagnostic: warning AD0001: Analyzer 'SonarAnalyzer.Rules.CSharp.UseCharOverloadOfStringMethods' threw an exception of type 'System.NullReferenceException' with message 'Object reference not set to an instance of an object.'.
+Exception occurred with following context:
+Compilation: DotNet6Project
+
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SonarAnalyzer.Rules.UseCharOverloadOfStringMethodsBase`2.CompilationTargetsValidNetVersion(Compilation compilation)
+   at SonarAnalyzer.Rules.UseCharOverloadOfStringMethodsBase`2.<Initialize>b__5_0(SonarCompilationStartAnalysisContext start)
+   at SonarAnalyzer.AnalysisContext.SonarAnalysisContext.Execute[TSonarContext,TRoslynContext](TSonarContext context, Action`1 action, SyntaxTree sourceTree, GeneratedCodeRecognizer generatedCodeRecognizer)
+   at SonarAnalyzer.AnalysisContext.SonarAnalysisContext.<>c__DisplayClass24_0.<RegisterCompilationStartAction>b__0(CompilationStartAnalysisContext c)
+   at Microsoft.CodeAnalysis.Diagnostics.AnalyzerExecutor.<>c.<ExecuteCompilationStartActions>b__38_0(ValueTuple`2 data)
+   at Microsoft.CodeAnalysis.Diagnostics.AnalyzerExecutor.ExecuteAndCatchIfThrows_NoLock[TArg](DiagnosticAnalyzer analyzer, Action`1 analyze, TArg argument, Nullable`1 info, CancellationToken cancellationToken)
+-----
+
+Suppress the following diagnostics to disable this analyzer: S6610
+            exception: Object reference not set to an instance of an object.
+Omnisharp: [DEBUG] Exception in diagnostic analyzer.
+            analyzer: SonarAnalyzer.Rules.CSharp.UseUnixEpoch
+            diagnostic: warning AD0001: Analyzer 'SonarAnalyzer.Rules.CSharp.UseUnixEpoch' threw an exception of type 'System.NullReferenceException' with message 'Object reference not set to an instance of an object.'.
+Exception occurred with following context:
+Compilation: DotNet6Project
+
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SonarAnalyzer.Rules.UseUnixEpochBase`3.IsUnixEpochSupported(Compilation compilation)
+   at SonarAnalyzer.Rules.UseUnixEpochBase`3.<Initialize>b__10_0(SonarCompilationStartAnalysisContext c)
+   at SonarAnalyzer.AnalysisContext.SonarAnalysisContext.Execute[TSonarContext,TRoslynContext](TSonarContext context, Action`1 action, SyntaxTree sourceTree, GeneratedCodeRecognizer generatedCodeRecognizer)
+   at SonarAnalyzer.AnalysisContext.SonarAnalysisContext.<>c__DisplayClass24_0.<RegisterCompilationStartAction>b__0(CompilationStartAnalysisContext c)
+   at Microsoft.CodeAnalysis.Diagnostics.AnalyzerExecutor.<>c.<ExecuteCompilationStartActions>b__38_0(ValueTuple`2 data)
+   at Microsoft.CodeAnalysis.Diagnostics.AnalyzerExecutor.ExecuteAndCatchIfThrows_NoLock[TArg](DiagnosticAnalyzer analyzer, Action`1 analyze, TArg argument, Nullable`1 info, CancellationToken cancellationToken)
+-----
+
+Suppress the following diagnostics to disable this analyzer: S6588
+            exception: Object reference not set to an instance of an object.
+Omnisharp: [DEBUG] ************  Response (1973.5514ms) ************
+{
+  "Request_seq": 3,
+  "Command": "/sonarlint/codecheck",
+  "Running": true,
+  "Success": true,
+  "Message": null,
+  "Body": {
+    "QuickFixes": [
+      {
+        "AdditionalLocations": [],
+        "QuickFixes": [
+          {
+            "Message": "Remove unused parameter",
+            "Fixes": [
+              {
+                "FileName": "/workspaces/sonarlint-omnisharp/its/src/test/projects/DotNet6Project/DotNet6Project/Program.cs",
+                "Edits": [
+                  {
+                    "StartLine": 7,
+                    "StartColumn": 26,
+                    "EndLine": 7,
+                    "EndColumn": 34,
+                    "NewText": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "LogLevel": "Warning",
+        "Id": "S1172",
+        "Tags": [],
+        "FileName": "/workspaces/sonarlint-omnisharp/its/src/test/projects/DotNet6Project/DotNet6Project/Program.cs",
+        "Line": 7,
+        "Column": 26,
+        "EndLine": 7,
+        "EndColumn": 34,
+        "Text": "Remove this unused method parameter 'a'.",
+        "Projects": [
+          "DotNet6Project"
+        ]
+      },
+      {
+        "AdditionalLocations": [],
+        "QuickFixes": [
+          {
+            "Message": "Remove unused member",
+            "Fixes": [
+              {
+                "FileName": "/workspaces/sonarlint-omnisharp/its/src/test/projects/DotNet6Project/DotNet6Project/Program.cs",
+                "Edits": [
+                  {
+                    "StartLine": 7,
+                    "StartColumn": 1,
+                    "EndLine": 11,
+                    "EndColumn": 1,
+                    "NewText": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "LogLevel": "Warning",
+        "Id": "S1144",
+        "Tags": [],
+        "FileName": "/workspaces/sonarlint-omnisharp/its/src/test/projects/DotNet6Project/DotNet6Project/Program.cs",
+        "Line": 7,
+        "Column": 22,
+        "EndLine": 7,
+        "EndColumn": 25,
+        "Text": "Remove the unused private method 'Foo'.",
+        "Projects": [
+          "DotNet6Project"
+        ]
+      }
+    ]
+  },
+  "Seq": 46,
+  "Type": "response"
+}
+Initializing metadata of file file:///workspaces/sonarlint-omnisharp/its/src/test/projects/DotNet6Project/DotNet6Project/Program.cs
+1/1 source file has been analyzed
+Stopping OmniSharp
+Omnisharp: [DEBUG] ************ Request ************
+{
+  "Type": "request",
+  "Seq": 4,
+  "Command": "/stopserver"
+}
+Omnisharp: [DEBUG] ************  Response (0.4481ms) ************
+{
+  "Request_seq": 4,
+  "Command": "/stopserver",
+  "Running": true,
+  "Success": true,
+  "Message": null,
+  "Body": null,
+  "Seq": 70,
+  "Type": "response"
+}
+Process 38278 exited with 0
+Omnisharp process terminated
+OmniSharp stopped
+++++++++++++++++++++++
+[[rule=csharpsquid:S1172, severity=MAJOR, line=7, file=file:///workspaces/sonarlint-omnisharp/its/src/test/projects/DotNet6Project/DotNet6Project/Program.cs], [rule=csharpsquid:S1144, severity=MAJOR, line=7, file=file:///workspaces/sonarlint-omnisharp/its/src/test/projects/DotNet6Project/DotNet6Project/Program.cs]]

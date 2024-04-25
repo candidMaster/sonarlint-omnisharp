@@ -1,0 +1,1399 @@
++++++++++++
+/tmp/junit11428126440444162436
+/tmp/junit11428126440444162436/sonarlintHome
+Loaded 1 plugins
+  * C# Code Quality and Security (Omnisharp) 1.19.0.86083 (csharp)
+Creating container for module 'solution1'
+BIIIII
+DotNet6Project
+/tmp/junit7458378009505022960/DotNet6Project
+  Determining projects to restore...
+  Restored /tmp/junit7458378009505022960/DotNet6Project/DotNet6Project/DotNet6Project.csproj (in 85 ms).
+Creating transient module container
+Start analysis
+Index files
+Language of file "file:///tmp/junit7458378009505022960/DotNet6Project/DotNet6Project/Program.cs" is detected to be "C#"
+1 file indexed
+Execute Sensor: OmniSharp
+Starting OmniSharp...
+dotnet /workspaces/sonarlint-omnisharp/omnisharp/net6/OmniSharp.dll -v MsBuild:loadProjectsOnDemand=false DotNet:enablePackageRestore=false --encoding utf-8 -s /tmp/junit7458378009505022960/DotNet6Project --plugin /tmp/junit11428126440444162436/sonarlintHome/work/.sonarlinttmp_326140490530762076/slServices/SonarLint.OmniSharp.DotNet.Services.dll
+Process 41829 started
+Omnisharp: [DEBUG] Loaded OmniSharp.Cake, Version=1.39.10.0, Culture=neutral, PublicKeyToken=7e5bf7b3b470b509
+Omnisharp: [DEBUG] Loaded OmniSharp.DotNetTest, Version=1.39.10.0, Culture=neutral, PublicKeyToken=7e5bf7b3b470b509
+Omnisharp: [DEBUG] Loaded OmniSharp.Host, Version=1.39.10.0, Culture=neutral, PublicKeyToken=7e5bf7b3b470b509
+Omnisharp: [DEBUG] Loaded OmniSharp.MSBuild, Version=1.39.10.0, Culture=neutral, PublicKeyToken=7e5bf7b3b470b509
+Omnisharp: [DEBUG] Loaded OmniSharp.Roslyn, Version=1.39.10.0, Culture=neutral, PublicKeyToken=7e5bf7b3b470b509
+Omnisharp: [DEBUG] Loaded OmniSharp.Roslyn.CSharp, Version=1.39.10.0, Culture=neutral, PublicKeyToken=7e5bf7b3b470b509
+Omnisharp: [DEBUG] Loaded OmniSharp.Script, Version=1.39.10.0, Culture=neutral, PublicKeyToken=7e5bf7b3b470b509
+Omnisharp: [DEBUG] Loaded OmniSharp.Shared, Version=1.39.10.0, Culture=neutral, PublicKeyToken=7e5bf7b3b470b509
+Omnisharp: [INFORMATION] Starting OmniSharp on Unknown 0.0 (Unknown)
+Omnisharp: [INFORMATION] Checking the 'DOTNET_ROOT' environment variable to find a .NET SDK
+Omnisharp: [INFORMATION] DotNetPath set to /usr/share/dotnet/dotnet
+Omnisharp: [DEBUG] .NET SDK requires MSBuild instances version 17.8.3 or higher
+Omnisharp: [INFORMATION] Located 1 MSBuild instance(s)
+            1: .NET Core SDK 8.0.203 17.9.6 - "/usr/share/dotnet/sdk/8.0.203/"
+Omnisharp: [DEBUG] MSBuild instance .NET Core SDK 8.0.203 17.9.6 scored at -2147483648
+Omnisharp: [INFORMATION] Registered MSBuild instance: .NET Core SDK 8.0.203 17.9.6 - "/usr/share/dotnet/sdk/8.0.203/"
+Omnisharp: [DEBUG] Starting with OmniSharp options: {"RoslynExtensionsOptions":{"EnableDecompilationSupport":false,"EnableAnalyzersSupport":false,"EnableImportCompletion":false,"EnableAsyncCompletion":false,"DocumentAnalysisTimeoutMs":30000,"DiagnosticWorkersThreadCount":1,"AnalyzeOpenDocumentsOnly":false,"InlayHintsOptions":{"EnableForParameters":false,"ForLiteralParameters":false,"ForIndexerParameters":false,"ForObjectCreationParameters":false,"ForOtherParameters":false,"SuppressForParametersThatDifferOnlyBySuffix":false,"SuppressForParametersThatMatchMethodIntent":false,"SuppressForParametersThatMatchArgumentName":false,"EnableForTypes":false,"ForImplicitVariableTypes":false,"ForLambdaParameterTypes":false,"ForImplicitObjectCreation":false},"LocationPaths":null},"FormattingOptions":{"OrganizeImports":false,"EnableEditorConfigSupport":false,"NewLine":"\n","UseTabs":false,"TabSize":4,"IndentationSize":4,"SpacingAfterMethodDeclarationName":false,"SeparateImportDirectiveGroups":false,"SpaceWithinMethodDeclarationParenthesis":false,"SpaceBetweenEmptyMethodDeclarationParentheses":false,"SpaceAfterMethodCallName":false,"SpaceWithinMethodCallParentheses":false,"SpaceBetweenEmptyMethodCallParentheses":false,"SpaceAfterControlFlowStatementKeyword":true,"SpaceWithinExpressionParentheses":false,"SpaceWithinCastParentheses":false,"SpaceWithinOtherParentheses":false,"SpaceAfterCast":false,"SpaceBeforeOpenSquareBracket":false,"SpaceBetweenEmptySquareBrackets":false,"SpaceWithinSquareBrackets":false,"SpaceAfterColonInBaseTypeDeclaration":true,"SpaceAfterComma":true,"SpaceAfterDot":false,"SpaceAfterSemicolonsInForStatement":true,"SpaceBeforeColonInBaseTypeDeclaration":true,"SpaceBeforeComma":false,"SpaceBeforeDot":false,"SpaceBeforeSemicolonsInForStatement":false,"SpacingAroundBinaryOperator":"single","IndentBraces":false,"IndentBlock":true,"IndentSwitchSection":true,"IndentSwitchCaseSection":true,"IndentSwitchCaseSectionWhenBlock":true,"LabelPositioning":"oneLess","WrappingPreserveSingleLine":true,"WrappingKeepStatementsOnSingleLine":true,"NewLinesForBracesInTypes":true,"NewLinesForBracesInMethods":true,"NewLinesForBracesInProperties":true,"NewLinesForBracesInAccessors":true,"NewLinesForBracesInAnonymousMethods":true,"NewLinesForBracesInControlBlocks":true,"NewLinesForBracesInAnonymousTypes":true,"NewLinesForBracesInObjectCollectionArrayInitializers":true,"NewLinesForBracesInLambdaExpressionBody":true,"NewLineForElse":true,"NewLineForCatch":true,"NewLineForFinally":true,"NewLineForMembersInObjectInit":true,"NewLineForMembersInAnonymousTypes":true,"NewLineForClausesInQuery":true},"FileOptions":{"SystemExcludeSearchPatterns":["**/node_modules/**/*","**/bin/**/*","**/obj/**/*","**/.git/**/*"],"ExcludeSearchPatterns":[]},"RenameOptions":{"RenameOverloads":false,"RenameInStrings":false,"RenameInComments":false},"ImplementTypeOptions":{"InsertionBehavior":0,"PropertyGenerationBehavior":0},"DotNetCliOptions":{"LocationPaths":null},"Plugins":{"LocationPaths":null}}
+Omnisharp: [INFORMATION] Invoking Workspace Options Provider: OmniSharp.Roslyn.CSharp.Services.CSharpFormattingWorkspaceOptionsProvider, Order: 0
+Omnisharp: [INFORMATION] Detecting Cake files in '/tmp/junit7458378009505022960/DotNet6Project/'.
+Omnisharp: [INFORMATION] Did not find any Cake files
+Omnisharp: [DEBUG] MSBuild environment:
+Mode: Standalone
+RunningTests: False
+RunningInVisualStudio: False
+MSBuildToolsDirectory32: /usr/share/dotnet/sdk/8.0.203
+MSBuildToolsDirectory64: /usr/share/dotnet/sdk/8.0.203
+MSBuildSDKsPath: /usr/share/dotnet/sdk/8.0.203/Sdks
+CurrentMSBuildConfigurationFile: /usr/share/dotnet/sdk/8.0.203/MSBuild.dll.config
+CurrentMSBuildExePath: /usr/share/dotnet/sdk/8.0.203/MSBuild.dll
+CurrentMSBuildToolsDirectory: /usr/share/dotnet/sdk/8.0.203
+VisualStudioInstallRootDirectory:
+MSBuildExtensionsPath: /usr/share/dotnet/sdk/8.0.203
+
+Omnisharp: [INFORMATION] Detecting projects in '/tmp/junit7458378009505022960/DotNet6Project/DotNet6Project.sln'.
+Omnisharp: [DEBUG] Parsing ProjectConfigurationPlatforms of '/tmp/junit7458378009505022960/DotNet6Project/DotNet6Project.sln'.
+Omnisharp: [INFORMATION] Queue project update for '/tmp/junit7458378009505022960/DotNet6Project/DotNet6Project/DotNet6Project.csproj'
+Omnisharp: [INFORMATION] Detecting CSX files in '/tmp/junit7458378009505022960/DotNet6Project/'.
+Omnisharp: [INFORMATION] Did not find any CSX files
+Omnisharp: [INFORMATION] Configuration finished.
+Omnisharp: [INFORMATION] Omnisharp server running using Stdio at location '/tmp/junit7458378009505022960/DotNet6Project/' on host -1.
+{"Event":"started","Body":null,"Seq":28,"Type":"event"}
+OmniSharp successfully started
+Omnisharp: [INFORMATION] Loading project: /tmp/junit7458378009505022960/DotNet6Project/DotNet6Project/DotNet6Project.csproj
+Omnisharp: [INFORMATION] Successfully loaded project file '/tmp/junit7458378009505022960/DotNet6Project/DotNet6Project/DotNet6Project.csproj'.
+{"Event":"MsBuildProjectDiagnostics","Body":{"FileName":"/tmp/junit7458378009505022960/DotNet6Project/DotNet6Project/DotNet6Project.csproj","Warnings":[],"Errors":[]},"Seq":31,"Type":"event"}
+Omnisharp: [INFORMATION] Adding project '/tmp/junit7458378009505022960/DotNet6Project/DotNet6Project/DotNet6Project.csproj'
+Omnisharp: [INFORMATION] Update project: DotNet6Project
+Omnisharp: [DEBUG] .editorconfig files were configured by the project DotNet6Project but will not be respected because the feature is switched off in OmniSharp. Enable .editorconfig support in OmniSharp to take advantage of them.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/Microsoft.CSharp.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/Microsoft.CSharp.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/Microsoft.VisualBasic.Core.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/Microsoft.VisualBasic.Core.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/Microsoft.VisualBasic.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/Microsoft.VisualBasic.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/Microsoft.Win32.Primitives.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/Microsoft.Win32.Primitives.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/Microsoft.Win32.Registry.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/Microsoft.Win32.Registry.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/mscorlib.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/mscorlib.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/netstandard.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/netstandard.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.AppContext.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.AppContext.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Buffers.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Buffers.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Collections.Concurrent.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Collections.Concurrent.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Collections.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Collections.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Collections.Immutable.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Collections.Immutable.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Collections.NonGeneric.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Collections.NonGeneric.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Collections.Specialized.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Collections.Specialized.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.ComponentModel.Annotations.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.ComponentModel.Annotations.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.ComponentModel.DataAnnotations.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.ComponentModel.DataAnnotations.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.ComponentModel.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.ComponentModel.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.ComponentModel.EventBasedAsync.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.ComponentModel.EventBasedAsync.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.ComponentModel.Primitives.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.ComponentModel.Primitives.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.ComponentModel.TypeConverter.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.ComponentModel.TypeConverter.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Configuration.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Configuration.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Console.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Console.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Core.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Core.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Data.Common.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Data.Common.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Data.DataSetExtensions.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Data.DataSetExtensions.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Data.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Data.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Diagnostics.Contracts.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Diagnostics.Contracts.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Diagnostics.Debug.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Diagnostics.Debug.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Diagnostics.DiagnosticSource.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Diagnostics.DiagnosticSource.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Diagnostics.FileVersionInfo.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Diagnostics.FileVersionInfo.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Diagnostics.Process.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Diagnostics.Process.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Diagnostics.StackTrace.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Diagnostics.StackTrace.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Diagnostics.TextWriterTraceListener.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Diagnostics.TextWriterTraceListener.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Diagnostics.Tools.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Diagnostics.Tools.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Diagnostics.TraceSource.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Diagnostics.TraceSource.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Diagnostics.Tracing.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Diagnostics.Tracing.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Drawing.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Drawing.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Drawing.Primitives.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Drawing.Primitives.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Dynamic.Runtime.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Dynamic.Runtime.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Formats.Asn1.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Formats.Asn1.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Globalization.Calendars.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Globalization.Calendars.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Globalization.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Globalization.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Globalization.Extensions.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Globalization.Extensions.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.IO.Compression.Brotli.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.IO.Compression.Brotli.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.IO.Compression.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.IO.Compression.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.IO.Compression.FileSystem.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.IO.Compression.FileSystem.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.IO.Compression.ZipFile.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.IO.Compression.ZipFile.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.IO.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.IO.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.IO.FileSystem.AccessControl.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.IO.FileSystem.AccessControl.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.IO.FileSystem.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.IO.FileSystem.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.IO.FileSystem.DriveInfo.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.IO.FileSystem.DriveInfo.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.IO.FileSystem.Primitives.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.IO.FileSystem.Primitives.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.IO.FileSystem.Watcher.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.IO.FileSystem.Watcher.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.IO.IsolatedStorage.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.IO.IsolatedStorage.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.IO.MemoryMappedFiles.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.IO.MemoryMappedFiles.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.IO.Pipes.AccessControl.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.IO.Pipes.AccessControl.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.IO.Pipes.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.IO.Pipes.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.IO.UnmanagedMemoryStream.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.IO.UnmanagedMemoryStream.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Linq.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Linq.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Linq.Expressions.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Linq.Expressions.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Linq.Parallel.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Linq.Parallel.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Linq.Queryable.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Linq.Queryable.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Memory.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Memory.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Net.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Net.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Net.Http.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Net.Http.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Net.Http.Json.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Net.Http.Json.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Net.HttpListener.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Net.HttpListener.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Net.Mail.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Net.Mail.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Net.NameResolution.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Net.NameResolution.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Net.NetworkInformation.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Net.NetworkInformation.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Net.Ping.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Net.Ping.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Net.Primitives.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Net.Primitives.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Net.Requests.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Net.Requests.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Net.Security.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Net.Security.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Net.ServicePoint.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Net.ServicePoint.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Net.Sockets.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Net.Sockets.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Net.WebClient.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Net.WebClient.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Net.WebHeaderCollection.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Net.WebHeaderCollection.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Net.WebProxy.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Net.WebProxy.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Net.WebSockets.Client.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Net.WebSockets.Client.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Net.WebSockets.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Net.WebSockets.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Numerics.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Numerics.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Numerics.Vectors.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Numerics.Vectors.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.ObjectModel.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.ObjectModel.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Reflection.DispatchProxy.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Reflection.DispatchProxy.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Reflection.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Reflection.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Reflection.Emit.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Reflection.Emit.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Reflection.Emit.ILGeneration.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Reflection.Emit.ILGeneration.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Reflection.Emit.Lightweight.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Reflection.Emit.Lightweight.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Reflection.Extensions.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Reflection.Extensions.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Reflection.Metadata.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Reflection.Metadata.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Reflection.Primitives.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Reflection.Primitives.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Reflection.TypeExtensions.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Reflection.TypeExtensions.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Resources.Reader.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Resources.Reader.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Resources.ResourceManager.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Resources.ResourceManager.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Resources.Writer.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Resources.Writer.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Runtime.CompilerServices.Unsafe.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Runtime.CompilerServices.Unsafe.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Runtime.CompilerServices.VisualC.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Runtime.CompilerServices.VisualC.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Runtime.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Runtime.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Runtime.Extensions.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Runtime.Extensions.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Runtime.Handles.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Runtime.Handles.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Runtime.InteropServices.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Runtime.InteropServices.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Runtime.InteropServices.RuntimeInformation.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Runtime.InteropServices.RuntimeInformation.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Runtime.Intrinsics.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Runtime.Intrinsics.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Runtime.Loader.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Runtime.Loader.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Runtime.Numerics.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Runtime.Numerics.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Runtime.Serialization.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Runtime.Serialization.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Runtime.Serialization.Formatters.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Runtime.Serialization.Formatters.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Runtime.Serialization.Json.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Runtime.Serialization.Json.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Runtime.Serialization.Primitives.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Runtime.Serialization.Primitives.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Runtime.Serialization.Xml.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Runtime.Serialization.Xml.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Security.AccessControl.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Security.AccessControl.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Security.Claims.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Security.Claims.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Security.Cryptography.Algorithms.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Security.Cryptography.Algorithms.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Security.Cryptography.Cng.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Security.Cryptography.Cng.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Security.Cryptography.Csp.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Security.Cryptography.Csp.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Security.Cryptography.Encoding.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Security.Cryptography.Encoding.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Security.Cryptography.OpenSsl.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Security.Cryptography.OpenSsl.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Security.Cryptography.Primitives.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Security.Cryptography.Primitives.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Security.Cryptography.X509Certificates.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Security.Cryptography.X509Certificates.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Security.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Security.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Security.Principal.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Security.Principal.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Security.Principal.Windows.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Security.Principal.Windows.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Security.SecureString.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Security.SecureString.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.ServiceModel.Web.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.ServiceModel.Web.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.ServiceProcess.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.ServiceProcess.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Text.Encoding.CodePages.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Text.Encoding.CodePages.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Text.Encoding.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Text.Encoding.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Text.Encoding.Extensions.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Text.Encoding.Extensions.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Text.Encodings.Web.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Text.Encodings.Web.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Text.Json.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Text.Json.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Text.RegularExpressions.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Text.RegularExpressions.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Threading.Channels.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Threading.Channels.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Threading.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Threading.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Threading.Overlapped.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Threading.Overlapped.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Threading.Tasks.Dataflow.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Threading.Tasks.Dataflow.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Threading.Tasks.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Threading.Tasks.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Threading.Tasks.Extensions.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Threading.Tasks.Extensions.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Threading.Tasks.Parallel.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Threading.Tasks.Parallel.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Threading.Thread.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Threading.Thread.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Threading.ThreadPool.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Threading.ThreadPool.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Threading.Timer.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Threading.Timer.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Transactions.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Transactions.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Transactions.Local.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Transactions.Local.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.ValueTuple.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.ValueTuple.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Web.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Web.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Web.HttpUtility.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Web.HttpUtility.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Windows.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Windows.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Xml.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Xml.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Xml.Linq.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Xml.Linq.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Xml.ReaderWriter.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Xml.ReaderWriter.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Xml.Serialization.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Xml.Serialization.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Xml.XDocument.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Xml.XDocument.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Xml.XmlDocument.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Xml.XmlDocument.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Xml.XmlSerializer.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Xml.XmlSerializer.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Xml.XPath.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Xml.XPath.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Xml.XPath.XDocument.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/System.Xml.XPath.XDocument.dll' to 'DotNet6Project'.
+Omnisharp: [DEBUG] Cache miss /home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/WindowsBase.dll
+Omnisharp: [DEBUG] Adding reference '/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.28/ref/net6.0/WindowsBase.dll' to 'DotNet6Project'.
+{"Event":"ProjectConfiguration","Body":{"ProjectId":"d426af11-5650-4cef-be28-fbabcafcb4db","SessionId":"-534189458","OutputKind":0,"ProjectCapabilities":["GenerateDocumentationFile","CSharp","Managed","ReferencesFolder","LanguageService","RelativePathDerivedDefaultNamespace","AssemblyReferences","COMReferences","ProjectReferences","SharedProjectReferences","OutputGroups","AllTargetOutputGroups","VisualStudioWellKnownOutputGroups","SingleFileGenerators","DeclaredSourceItems","UserSourceItems","CrossPlatformExecutable","SupportsHotReload","Pack","NetSdkOCIImageBuild"],"TargetFrameworks":["net6.0"],"SdkVersion":"10455523","References":["f9b57385e04dcef1","b04d1a92c03aa393","740a41f35e38e687","a650b002a55ee732","8bb25cdfa9f58d95","ca01f9c6c9519128","a7db6d4c13eb109a","4787ec450370cdc","faae3cd2329a5f23","b136c9057d0eac41","a4be57a67913d9f2","c2f7e51423366080","9221249557edf7da","ac08b9147e6c6cc1","fc8f31a851b2f1e","3d1fab7a1546aa70","75c42701c310d265","6eac5906d797823f","51b6b65db45d8317","977562ede61122d1","6f06be6c7dad3d57","782a823a2d8cd40","13bbf2cbcdb96469","a8b1d9f359d7b4f","8db448e27f0bad1b","5faa84ffcc646d16","3dd9e1e713ce28c1","bc70a3688f03b546","3e025539204a5d59","12bec27505c61c10","65e9cc7358ddee2e","7df5bfe00323a6a8","ce3f444652eead51","feebdde9a00fe94b","22d24df113118e04","6a8ada60e30e6abf","6001a9b860f7e43","e94e5ff7b2eb39a9","46b5412910b12f1a","eac4975c939bd705","a777367473e5f95c","d574426ce261f3cd","2620772be337bacb","ce4b86769789bfd2","afe098e2b8eb2364","4bca77302b767821","b42e3bf9c2caf9d","11d6a5981dd09f1d","2528657f041a0f71","1a4910e7928d2be4","385f6cb9a1a92341","8a6a053fd546c4b9","4bd5d70d9487a7","546da94a433dd46b","c8cd67501180cdb3","99380cc3f9cb0f62","2b71ac54faa4d900","6d26f5b6d581bb7a","e99748daf45287f7","88a79e3fbc9be5a5","baed534980001b3e","a094f278ebd28638","f02b6f1120327ed5","1fdb3be137e7c8ab","d8d06e6254ff9a8","7a37191fa2429c0","db2085d40be0c6b","732e2f41e1ec328f","cc0b8a0dc4b5cc17","b3ec78066692ce40","b633596fb5206911","b1c086ddba588d7f","3935c25fc587591d","1fe2caf02ff5116","d1e401c8e175f133","d795c4b069f42de2","28889d355be716fb","987004758afb653e","a93a13f245d3dbf5","c2c7e5dd6bcf2f46","f40e391e11837c28","1f1effdb4f95fef","4b3556ed143bb1a1","990c07b3a694f061","16f3b3c6aa66dbea","bbc2c7fb9307d0f8","cae96c695fa0a849","23af2e185bf7f884","10682f5180926917","531413e8ae8921e9","cbb2e2956b8bc5a1","693159958e045249","abb76040f918f212","2978ebe3fa017619","d753dc831058d377","5d5ab2fae13c7cd7","6f36e9e201c8abbc","2c2215284100c1bc","abef39459b5f8089","58b2ccb5d5268768","f4c238ed95a4c9e0","463559064b820a89","f46a5248555641f3","d9a0d90fcf36b125","f707ec8ff0716b6a","d31ae060adc0cf68","b740561cbe999190","6f6cd086b29443f","3e2b84419c2678fe","16aa5cd16608904e","88efed4970ce8fb","525af1cb4f8c1ef","82365a1d92723ea2","f9081118726c671d","1dc6ba4b51a92fe2","480fcc9a46d59829","96ae799a9cd65a64","53da3fcaf9d4a664","762862983c40286f","7143cd55e6267a10","9c4f1e8060c475b4","5641b1bfbef8f076","c074fd9cba688aec","6b8a7cd56172fed1","5d25704a6a0be6ed","7de0d61ed8a595ec","85c2a8db5105888","ec2dac2bf194d54a","baae63d2bc6dd501","6e18d5f5513ced07","ecc917c3c9b5c475","3e60a289d38463fa","3297b865f846bd0a","34cfcce7d574a410","762c57508db7a1c2","81016cf6be9235ed","96f5a81e8df6f19c","bc2ea691e56496f8","5d957776a3bc8463","4fcdd50549f35f69","1613d6b76156e26a","609f5396c0534146","31be6951d8a1de6e","d373f3c4566c70c6","b42e1bda5a17dc0e","3017ef0c38e2d837","92e480fdaacc79e0","ffb314483a45fa40","3159cfd5553fa1b8","6a5eaa177b0b8d54","add48a46678bd09d","c70f2a1b237f229d","3beb376886d63c97","363b07840a344182","f638dfb632c7bb3e","4fc1e02f10ba6dcc","7f7e058ceeba44c4","76fdeb10eb04a251","c229c6a3986d545b"],"FileExtensions":["-1257278712"],"FileCounts":[4],"SdkStyleProject":true},"Seq":353,"Type":"event"}
+{"Event":"ProjectAdded","Body":{"MsBuildProject":{"ProjectGuid":"00000000-0000-0000-0000-000000000000","Path":"/tmp/junit7458378009505022960/DotNet6Project/DotNet6Project/DotNet6Project.csproj","AssemblyName":"DotNet6Project","TargetPath":"/tmp/junit7458378009505022960/DotNet6Project/DotNet6Project/bin/Debug/net6.0/DotNet6Project.dll","TargetFramework":".NETCoreApp,Version=v6.0","SourceFiles":["/tmp/junit7458378009505022960/DotNet6Project/DotNet6Project/Program.cs","/tmp/junit7458378009505022960/DotNet6Project/DotNet6Project/obj/Debug/net6.0/DotNet6Project.GlobalUsings.g.cs","/tmp/junit7458378009505022960/DotNet6Project/DotNet6Project/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs","/tmp/junit7458378009505022960/DotNet6Project/DotNet6Project/obj/Debug/net6.0/DotNet6Project.AssemblyInfo.cs"],"TargetFrameworks":[{"Name":".NETCoreApp","FriendlyName":".NETCoreApp","ShortName":"net6.0"}],"OutputPath":"bin\\Debug/net6.0/","IntermediateOutputPath":"obj\\Debug/net6.0/","Configuration":"Debug","Platform":"AnyCPU","IsExe":true,"IsUnityProject":false}},"Seq":354,"Type":"event"}
+Projects successfully loaded
+{"Event":"ProjectChanged","Body":{"MsBuildProject":{"ProjectGuid":"00000000-0000-0000-0000-000000000000","Path":"/tmp/junit7458378009505022960/DotNet6Project/DotNet6Project/DotNet6Project.csproj","AssemblyName":"DotNet6Project","TargetPath":"/tmp/junit7458378009505022960/DotNet6Project/DotNet6Project/bin/Debug/net6.0/DotNet6Project.dll","TargetFramework":".NETCoreApp,Version=v6.0","SourceFiles":["/tmp/junit7458378009505022960/DotNet6Project/DotNet6Project/Program.cs","/tmp/junit7458378009505022960/DotNet6Project/DotNet6Project/obj/Debug/net6.0/DotNet6Project.GlobalUsings.g.cs","/tmp/junit7458378009505022960/DotNet6Project/DotNet6Project/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs","/tmp/junit7458378009505022960/DotNet6Project/DotNet6Project/obj/Debug/net6.0/DotNet6Project.AssemblyInfo.cs"],"TargetFrameworks":[{"Name":".NETCoreApp","FriendlyName":".NETCoreApp","ShortName":"net6.0"}],"OutputPath":"bin\\Debug/net6.0/","IntermediateOutputPath":"obj\\Debug/net6.0/","Configuration":"Debug","Platform":"AnyCPU","IsExe":true,"IsUnityProject":false}},"Seq":355,"Type":"event"}
+Omnisharp: [DEBUG] ************ Request ************
+{
+  "Type": "request",
+  "Seq": 1,
+  "Command": "/sonarlint/config",
+  "Arguments": {
+    "activeRules": [
+      {
+        "ruleId": "S4200"
+      },
+      {
+        "ruleId": "S4201"
+      },
+      {
+        "ruleId": "S2386"
+      },
+      {
+        "ruleId": "S5773"
+      },
+      {
+        "ruleId": "S3597"
+      },
+      {
+        "ruleId": "S3598"
+      },
+      {
+        "ruleId": "S3236"
+      },
+      {
+        "ruleId": "S3358"
+      },
+      {
+        "ruleId": "S3237"
+      },
+      {
+        "ruleId": "S5659"
+      },
+      {
+        "ruleId": "S1066"
+      },
+      {
+        "ruleId": "S1186"
+      },
+      {
+        "ruleId": "S4581"
+      },
+      {
+        "ruleId": "S1185"
+      },
+      {
+        "ruleId": "S3251"
+      },
+      {
+        "ruleId": "S3241"
+      },
+      {
+        "ruleId": "S3363"
+      },
+      {
+        "ruleId": "S4210"
+      },
+      {
+        "ruleId": "S2275"
+      },
+      {
+        "ruleId": "S4211"
+      },
+      {
+        "ruleId": "S3244"
+      },
+      {
+        "ruleId": "S5542"
+      },
+      {
+        "ruleId": "S3246"
+      },
+      {
+        "ruleId": "S4456"
+      },
+      {
+        "ruleId": "S3247"
+      },
+      {
+        "ruleId": "S5547"
+      },
+      {
+        "ruleId": "S3005"
+      },
+      {
+        "ruleId": "S3249"
+      },
+      {
+        "ruleId": "S1155"
+      },
+      {
+        "ruleId": "S3450"
+      },
+      {
+        "ruleId": "S3451"
+      },
+      {
+        "ruleId": "S4663"
+      },
+      {
+        "ruleId": "S3453"
+      },
+      {
+        "ruleId": "S2486"
+      },
+      {
+        "ruleId": "S2365"
+      },
+      {
+        "ruleId": "S2123"
+      },
+      {
+        "ruleId": "S4423"
+      },
+      {
+        "ruleId": "S3456"
+      },
+      {
+        "ruleId": "S6603"
+      },
+      {
+        "ruleId": "S4545"
+      },
+      {
+        "ruleId": "S6602"
+      },
+      {
+        "ruleId": "S2368"
+      },
+      {
+        "ruleId": "S3457"
+      },
+      {
+        "ruleId": "S6605"
+      },
+      {
+        "ruleId": "S4426"
+      },
+      {
+        "ruleId": "S3458"
+      },
+      {
+        "ruleId": "S3217"
+      },
+      {
+        "ruleId": "S3459"
+      },
+      {
+        "ruleId": "S3218"
+      },
+      {
+        "ruleId": "S6607"
+      },
+      {
+        "ruleId": "S4428"
+      },
+      {
+        "ruleId": "S6609"
+      },
+      {
+        "ruleId": "S6608"
+      },
+      {
+        "ruleId": "S1048"
+      },
+      {
+        "ruleId": "S1168"
+      },
+      {
+        "ruleId": "S1163"
+      },
+      {
+        "ruleId": "S2251"
+      },
+      {
+        "ruleId": "S2372"
+      },
+      {
+        "ruleId": "S1172"
+      },
+      {
+        "ruleId": "S2252"
+      },
+      {
+        "ruleId": "S3220"
+      },
+      {
+        "ruleId": "S818"
+      },
+      {
+        "ruleId": "S6610"
+      },
+      {
+        "ruleId": "S3343"
+      },
+      {
+        "ruleId": "S3464"
+      },
+      {
+        "ruleId": "S4433"
+      },
+      {
+        "ruleId": "S2376"
+      },
+      {
+        "ruleId": "S6612"
+      },
+      {
+        "ruleId": "S3466"
+      },
+      {
+        "ruleId": "S3346"
+      },
+      {
+        "ruleId": "S6613"
+      },
+      {
+        "ruleId": "S2259"
+      },
+      {
+        "ruleId": "S6618"
+      },
+      {
+        "ruleId": "S6617"
+      },
+      {
+        "ruleId": "S1135"
+      },
+      {
+        "ruleId": "S1134"
+      },
+      {
+        "ruleId": "S1133"
+      },
+      {
+        "ruleId": "S2583"
+      },
+      {
+        "ruleId": "S2342",
+        "params": {
+          "format": "^([A-Z]{1,3}[a-z0-9]+)*([A-Z]{2})?$",
+          "flagsAttributeFormat": "^([A-Z]{1,3}[a-z0-9]+)*([A-Z]{2})?s$"
+        }
+      },
+      {
+        "ruleId": "S2222"
+      },
+      {
+        "ruleId": "S2344"
+      },
+      {
+        "ruleId": "S2223"
+      },
+      {
+        "ruleId": "S3433"
+      },
+      {
+        "ruleId": "S2345"
+      },
+      {
+        "ruleId": "S4524"
+      },
+      {
+        "ruleId": "S2346"
+      },
+      {
+        "ruleId": "S2225"
+      },
+      {
+        "ruleId": "S2589"
+      },
+      {
+        "ruleId": "S5856"
+      },
+      {
+        "ruleId": "S1144"
+      },
+      {
+        "ruleId": "S1264"
+      },
+      {
+        "ruleId": "S3440"
+      },
+      {
+        "ruleId": "S3442"
+      },
+      {
+        "ruleId": "S3443"
+      },
+      {
+        "ruleId": "S3444"
+      },
+      {
+        "ruleId": "S2234"
+      },
+      {
+        "ruleId": "S2114"
+      },
+      {
+        "ruleId": "S3445"
+      },
+      {
+        "ruleId": "S2115"
+      },
+      {
+        "ruleId": "S2479"
+      },
+      {
+        "ruleId": "S3447"
+      },
+      {
+        "ruleId": "S3449"
+      },
+      {
+        "ruleId": "S3329"
+      },
+      {
+        "ruleId": "S1118"
+      },
+      {
+        "ruleId": "S1117"
+      },
+      {
+        "ruleId": "S1116"
+      },
+      {
+        "ruleId": "S1479",
+        "params": {
+          "maximum": "30"
+        }
+      },
+      {
+        "ruleId": "S1110"
+      },
+      {
+        "ruleId": "S2681"
+      },
+      {
+        "ruleId": "S2201"
+      },
+      {
+        "ruleId": "S6800"
+      },
+      {
+        "ruleId": "S3897"
+      },
+      {
+        "ruleId": "S3776",
+        "params": {
+          "propertyThreshold": "3",
+          "threshold": "15"
+        }
+      },
+      {
+        "ruleId": "S2445"
+      },
+      {
+        "ruleId": "S3655"
+      },
+      {
+        "ruleId": "S6803"
+      },
+      {
+        "ruleId": "S2688"
+      },
+      {
+        "ruleId": "S3415"
+      },
+      {
+        "ruleId": "S2326"
+      },
+      {
+        "ruleId": "S2328"
+      },
+      {
+        "ruleId": "S1006"
+      },
+      {
+        "ruleId": "S1125"
+      },
+      {
+        "ruleId": "S1123"
+      },
+      {
+        "ruleId": "S1121"
+      },
+      {
+        "ruleId": "S1481"
+      },
+      {
+        "ruleId": "S2692"
+      },
+      {
+        "ruleId": "S2696"
+      },
+      {
+        "ruleId": "S4635"
+      },
+      {
+        "ruleId": "S2699"
+      },
+      {
+        "ruleId": "S3427"
+      },
+      {
+        "ruleId": "S2219"
+      },
+      {
+        "ruleId": "S1699"
+      },
+      {
+        "ruleId": "S1215"
+      },
+      {
+        "ruleId": "S1210"
+      },
+      {
+        "ruleId": "S1450"
+      },
+      {
+        "ruleId": "S3871"
+      },
+      {
+        "ruleId": "S3875"
+      },
+      {
+        "ruleId": "S3998"
+      },
+      {
+        "ruleId": "S3877"
+      },
+      {
+        "ruleId": "S3878"
+      },
+      {
+        "ruleId": "S2306"
+      },
+      {
+        "ruleId": "S1104"
+      },
+      {
+        "ruleId": "S3881"
+      },
+      {
+        "ruleId": "S2551"
+      },
+      {
+        "ruleId": "S3400"
+      },
+      {
+        "ruleId": "S3885"
+      },
+      {
+        "ruleId": "S3887"
+      },
+      {
+        "ruleId": "S2436",
+        "params": {
+          "maxMethod": "3",
+          "max": "2"
+        }
+      },
+      {
+        "ruleId": "S3889"
+      },
+      {
+        "ruleId": "S2437"
+      },
+      {
+        "ruleId": "S3971"
+      },
+      {
+        "ruleId": "S2761"
+      },
+      {
+        "ruleId": "S3972"
+      },
+      {
+        "ruleId": "S3973"
+      },
+      {
+        "ruleId": "S3610"
+      },
+      {
+        "ruleId": "S1206"
+      },
+      {
+        "ruleId": "S3981"
+      },
+      {
+        "ruleId": "S4830"
+      },
+      {
+        "ruleId": "S3984"
+      },
+      {
+        "ruleId": "S3626"
+      },
+      {
+        "ruleId": "S3869"
+      },
+      {
+        "ruleId": "S1656"
+      },
+      {
+        "ruleId": "S927"
+      },
+      {
+        "ruleId": "S2743"
+      },
+      {
+        "ruleId": "S3963"
+      },
+      {
+        "ruleId": "S3600"
+      },
+      {
+        "ruleId": "S2995"
+      },
+      {
+        "ruleId": "S2996"
+      },
+      {
+        "ruleId": "S2997"
+      },
+      {
+        "ruleId": "S2755"
+      },
+      {
+        "ruleId": "S3603"
+      },
+      {
+        "ruleId": "S3966"
+      },
+      {
+        "ruleId": "S3604"
+      },
+      {
+        "ruleId": "S2757"
+      },
+      {
+        "ruleId": "S1751"
+      },
+      {
+        "ruleId": "S1871"
+      },
+      {
+        "ruleId": "S907"
+      },
+      {
+        "ruleId": "S1764"
+      },
+      {
+        "ruleId": "S1643"
+      },
+      {
+        "ruleId": "S2970"
+      },
+      {
+        "ruleId": "S2971"
+      },
+      {
+        "ruleId": "S2857"
+      },
+      {
+        "ruleId": "S2737"
+      },
+      {
+        "ruleId": "S3949"
+      },
+      {
+        "ruleId": "S1854"
+      },
+      {
+        "ruleId": "S3928"
+      },
+      {
+        "ruleId": "S1862"
+      },
+      {
+        "ruleId": "S2953"
+      },
+      {
+        "ruleId": "S3923"
+      },
+      {
+        "ruleId": "S3925"
+      },
+      {
+        "ruleId": "S3926"
+      },
+      {
+        "ruleId": "S3927"
+      },
+      {
+        "ruleId": "S2925"
+      },
+      {
+        "ruleId": "S1848"
+      },
+      {
+        "ruleId": "S2930"
+      },
+      {
+        "ruleId": "S2933"
+      },
+      {
+        "ruleId": "S2934"
+      },
+      {
+        "ruleId": "S3903"
+      },
+      {
+        "ruleId": "S3904"
+      },
+      {
+        "ruleId": "S1607"
+      },
+      {
+        "ruleId": "S1939"
+      },
+      {
+        "ruleId": "S1944"
+      },
+      {
+        "ruleId": "S1940"
+      },
+      {
+        "ruleId": "S4070"
+      },
+      {
+        "ruleId": "S5034"
+      },
+      {
+        "ruleId": "S6588"
+      },
+      {
+        "ruleId": "S4061"
+      },
+      {
+        "ruleId": "S1905"
+      },
+      {
+        "ruleId": "S3060"
+      },
+      {
+        "ruleId": "S2094"
+      },
+      {
+        "ruleId": "S3063"
+      },
+      {
+        "ruleId": "S4143"
+      },
+      {
+        "ruleId": "S4144"
+      },
+      {
+        "ruleId": "S6580"
+      },
+      {
+        "ruleId": "S4275"
+      },
+      {
+        "ruleId": "S6575"
+      },
+      {
+        "ruleId": "S4035"
+      },
+      {
+        "ruleId": "S4277"
+      },
+      {
+        "ruleId": "S4158"
+      },
+      {
+        "ruleId": "S4159"
+      },
+      {
+        "ruleId": "S2190"
+      },
+      {
+        "ruleId": "S6420"
+      },
+      {
+        "ruleId": "S3397"
+      },
+      {
+        "ruleId": "S2187"
+      },
+      {
+        "ruleId": "S4487"
+      },
+      {
+        "ruleId": "S6422"
+      },
+      {
+        "ruleId": "S3398"
+      },
+      {
+        "ruleId": "S6424"
+      },
+      {
+        "ruleId": "S125"
+      },
+      {
+        "ruleId": "S110",
+        "params": {
+          "max": "5"
+        }
+      },
+      {
+        "ruleId": "S112"
+      },
+      {
+        "ruleId": "S4260"
+      },
+      {
+        "ruleId": "S3172"
+      },
+      {
+        "ruleId": "S6562"
+      },
+      {
+        "ruleId": "S6561"
+      },
+      {
+        "ruleId": "S2198"
+      },
+      {
+        "ruleId": "S6797"
+      },
+      {
+        "ruleId": "S4136"
+      },
+      {
+        "ruleId": "S3168"
+      },
+      {
+        "ruleId": "S4015"
+      },
+      {
+        "ruleId": "S6798"
+      },
+      {
+        "ruleId": "S3169"
+      },
+      {
+        "ruleId": "S4019"
+      },
+      {
+        "ruleId": "S101"
+      },
+      {
+        "ruleId": "S2290"
+      },
+      {
+        "ruleId": "S1199"
+      },
+      {
+        "ruleId": "S2291"
+      },
+      {
+        "ruleId": "S3260"
+      },
+      {
+        "ruleId": "S2292"
+      },
+      {
+        "ruleId": "S3261"
+      },
+      {
+        "ruleId": "S1075"
+      },
+      {
+        "ruleId": "S3262"
+      },
+      {
+        "ruleId": "S4583"
+      },
+      {
+        "ruleId": "S4220"
+      },
+      {
+        "ruleId": "S3010"
+      },
+      {
+        "ruleId": "S3011"
+      },
+      {
+        "ruleId": "S4586"
+      },
+      {
+        "ruleId": "S2166"
+      },
+      {
+        "ruleId": "S3376"
+      },
+      {
+        "ruleId": "S3256"
+      },
+      {
+        "ruleId": "S108"
+      },
+      {
+        "ruleId": "S107",
+        "params": {
+          "max": "7"
+        }
+      },
+      {
+        "ruleId": "S2183"
+      },
+      {
+        "ruleId": "S2184"
+      },
+      {
+        "ruleId": "S3263"
+      },
+      {
+        "ruleId": "S2053"
+      },
+      {
+        "ruleId": "S3264"
+      },
+      {
+        "ruleId": "S3265"
+      },
+      {
+        "ruleId": "S3267"
+      },
+      {
+        "ruleId": "S2178"
+      },
+      {
+        "ruleId": "S5445"
+      },
+      {
+        "ruleId": "S6419"
+      }
+    ]
+  }
+}
+Omnisharp: [DEBUG] ************  Response (56.3857ms) ************
+{
+  "Request_seq": 1,
+  "Command": "/sonarlint/config",
+  "Running": true,
+  "Success": true,
+  "Message": null,
+  "Body": true,
+  "Seq": 357,
+  "Type": "response"
+}
+Omnisharp: [DEBUG] ************ Request ************
+{
+  "Type": "request",
+  "Seq": 2,
+  "Command": "/updatebuffer",
+  "Arguments": {
+    "FileName": "/tmp/junit7458378009505022960/DotNet6Project/DotNet6Project/Program.cs",
+    "Buffer": "using System;\n\nnamespace ConsoleApp1\n{\n    class Program\n    {\n        private void Foo(string a)\n        {\n            Console.WriteLine(\"Hello World!\");\n        }\n    }\n}"
+  }
+}
+1 source file to be analyzed
+Omnisharp: [DEBUG] Updating file /tmp/junit7458378009505022960/DotNet6Project/DotNet6Project/Program.cs with new text:
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        private void Foo(string a)
+        {
+            Console.WriteLine("Hello World!");
+        }
+    }
+}
+Omnisharp: [DEBUG] ************  Response (34.3414ms) ************
+{
+  "Request_seq": 2,
+  "Command": "/updatebuffer",
+  "Running": true,
+  "Success": true,
+  "Message": null,
+  "Body": true,
+  "Seq": 360,
+  "Type": "response"
+}
+Omnisharp: [DEBUG] ************ Request ************
+{
+  "Type": "request",
+  "Seq": 3,
+  "Command": "/sonarlint/codecheck",
+  "Arguments": {
+    "FileName": "/tmp/junit7458378009505022960/DotNet6Project/DotNet6Project/Program.cs"
+  }
+}
+Omnisharp: [DEBUG] ************  Response (2594.5002ms) ************
+{
+  "Request_seq": 3,
+  "Command": "/sonarlint/codecheck",
+  "Running": true,
+  "Success": true,
+  "Message": null,
+  "Body": {
+    "QuickFixes": [
+      {
+        "AdditionalLocations": [],
+        "QuickFixes": [
+          {
+            "Message": "Remove unused parameter",
+            "Fixes": [
+              {
+                "FileName": "/tmp/junit7458378009505022960/DotNet6Project/DotNet6Project/Program.cs",
+                "Edits": [
+                  {
+                    "StartLine": 7,
+                    "StartColumn": 26,
+                    "EndLine": 7,
+                    "EndColumn": 34,
+                    "NewText": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "LogLevel": "Warning",
+        "Id": "S1172",
+        "Tags": [],
+        "FileName": "/tmp/junit7458378009505022960/DotNet6Project/DotNet6Project/Program.cs",
+        "Line": 7,
+        "Column": 26,
+        "EndLine": 7,
+        "EndColumn": 34,
+        "Text": "Remove this unused method parameter 'a'.",
+        "Projects": [
+          "DotNet6Project"
+        ]
+      },
+      {
+        "AdditionalLocations": [],
+        "QuickFixes": [
+          {
+            "Message": "Remove unused member",
+            "Fixes": [
+              {
+                "FileName": "/tmp/junit7458378009505022960/DotNet6Project/DotNet6Project/Program.cs",
+                "Edits": [
+                  {
+                    "StartLine": 7,
+                    "StartColumn": 1,
+                    "EndLine": 11,
+                    "EndColumn": 1,
+                    "NewText": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "LogLevel": "Warning",
+        "Id": "S1144",
+        "Tags": [],
+        "FileName": "/tmp/junit7458378009505022960/DotNet6Project/DotNet6Project/Program.cs",
+        "Line": 7,
+        "Column": 22,
+        "EndLine": 7,
+        "EndColumn": 25,
+        "Text": "Remove the unused private method 'Foo'.",
+        "Projects": [
+          "DotNet6Project"
+        ]
+      }
+    ]
+  },
+  "Seq": 364,
+  "Type": "response"
+}
+Initializing metadata of file file:///tmp/junit7458378009505022960/DotNet6Project/DotNet6Project/Program.cs
+1/1 source file has been analyzed
+Stopping OmniSharp
+Omnisharp: [DEBUG] ************ Request ************
+{
+  "Type": "request",
+  "Seq": 4,
+  "Command": "/stopserver"
+}
+Omnisharp: [DEBUG] ************  Response (0.7343ms) ************
+{
+  "Request_seq": 4,
+  "Command": "/stopserver",
+  "Running": true,
+  "Success": true,
+  "Message": null,
+  "Body": null,
+  "Seq": 375,
+  "Type": "response"
+}
+Process 41829 exited with 0
+Omnisharp process terminated
+OmniSharp stopped
+++++++++++++++++++++++
+[[rule=csharpsquid:S1172, severity=MAJOR, line=7, file=file:///tmp/junit7458378009505022960/DotNet6Project/DotNet6Project/Program.cs], [rule=csharpsquid:S1144, severity=MAJOR, line=7, file=file:///tmp/junit7458378009505022960/DotNet6Project/DotNet6Project/Program.cs]]

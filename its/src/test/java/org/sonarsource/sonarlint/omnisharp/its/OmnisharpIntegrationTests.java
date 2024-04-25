@@ -18,6 +18,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 package org.sonarsource.sonarlint.omnisharp.its;
+// dotnet /workspaces/sonarlint-omnisharp/omnisharp/net6/OmniSharp.dll -v MsBuild:loadProjectsOnDemand=false DotNet:enablePackageRestore=false --encoding utf-8 -s /tmp/junit4374654915410018499/DotNet6Project.sln --plugin /tmp/junit12493087337646445808/sonarlintHome/work/.sonarlinttmp_14946252130415381211/slServices/SonarLint.OmniSharp.DotNet.Services.dll
+// System.ArgumentException: OmniSharp only supports being launched with a directory path or a path to a solution (.sln, .slnf) file. (Parameter 'path')
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -80,15 +82,19 @@ class OmnisharpIntegrationTests {
   @BeforeAll
   public static void prepare(@TempDir Path tmpDir) throws Exception {
     Path slHome = tmpDir.resolve("sonarlintHome");
+    System.out.println("+++++++++++");
+    System.out.println(tmpDir);
+    System.out.println(slHome);
     Files.createDirectories(slHome);
-    File pluginJar = FileUtils
-      .listFiles(Paths.get("../omnisharp-plugin/target/").toAbsolutePath().normalize().toFile(), new RegexFileFilter("^sonarlint-omnisharp-plugin-([0-9.]+)(-SNAPSHOT)*.jar$"),
-        FalseFileFilter.FALSE)
-      .iterator().next();
+    // File pluginJar = FileUtils
+    //   .listFiles(Paths.get("../omnisharp-plugin/target/").toAbsolutePath().normalize().toFile(), new RegexFileFilter("^sonarlint-omnisharp-plugin-([0-9.]+)(-SNAPSHOT)*.jar$"),
+    //     FalseFileFilter.FALSE)
+    //   .iterator().next();
+    File pluginJar = new File("/workspaces/sonarlint-omnisharp/lintomnisharp.jar");
 
-    String omnisharpMonoPath = new File("target/omnisharp-mono").getAbsolutePath();
-    String omnisharpWinPath = new File("target/omnisharp-win").getAbsolutePath();
-    String omnisharpNet6Path = new File("target/omnisharp-net6").getAbsolutePath();
+    String omnisharpMonoPath = "/workspaces/sonarlint-omnisharp/omnisharp/mono";
+    String omnisharpWinPath = "/workspaces/sonarlint-omnisharp/omnisharp/net472";
+    String omnisharpNet6Path = "/workspaces/sonarlint-omnisharp/omnisharp/net6";
     StandaloneGlobalConfiguration config = StandaloneGlobalConfiguration.builder()
       .addPlugin(pluginJar.toPath())
       .addEnabledLanguage(Language.CS)
@@ -97,9 +103,9 @@ class OmnisharpIntegrationTests {
       .setExtraProperties(
         Map.of(
           "sonar.cs.internal.omnisharpMonoLocation", omnisharpMonoPath,
-          "sonar.cs.internal.omnisharpWinLocation", omnisharpWinPath,
+          // "sonar.cs.internal.omnisharpWinLocation", omnisharpWinPath,
           "sonar.cs.internal.omnisharpNet6Location", omnisharpNet6Path))
-      .setClientPid(ProcessHandle.current().pid())
+      // .setClientPid(ProcessHandle.current().pid())
       .build();
     sonarlintEngine = new StandaloneSonarLintEngineImpl(config);
   }
@@ -145,12 +151,14 @@ class OmnisharpIntegrationTests {
     StandaloneAnalysisConfiguration analysisConfiguration = StandaloneAnalysisConfiguration.builder()
       .setBaseDir(baseDir)
       .addInputFile(inputFile)
-      .setModuleKey(SOLUTION1_MODULE_KEY)
-      .putExtraProperty("sonar.cs.internal.useNet6", "true")
-      .putExtraProperty("sonar.cs.internal.solutionPath", baseDir.resolve("ConsoleApp1.sln").toString())
+      .setModuleKey("MyModule")
+      // .putExtraProperty("sonar.cs.internal.useNet6", "true")
+      // .putExtraProperty("sonar.cs.internal.solutionPath", baseDir.resolve("ConsoleApp1.sln").toString())
       .build();
     sonarlintEngine.analyze(analysisConfiguration, issues::add, null, null);
-
+    System.out.println("HIIIII");
+    System.out.println(baseDir.resolve("ConsoleApp1.sln").toString());
+    System.out.println(issues);
     assertThat(issues)
       .extracting(Issue::getRuleKey, Issue::getMessage, Issue::getStartLine, Issue::getStartLineOffset, Issue::getEndLine, Issue::getEndLineOffset, i -> i.getInputFile().getPath(),
         Issue::getSeverity)
@@ -282,12 +290,66 @@ class OmnisharpIntegrationTests {
     StandaloneAnalysisConfiguration analysisConfiguration = StandaloneAnalysisConfiguration.builder()
       .setBaseDir(baseDir)
       .addInputFile(inputFile)
-      .setModuleKey(SOLUTION1_MODULE_KEY)
-      .putExtraProperty("sonar.cs.internal.useNet6", "true")
-      .putExtraProperty("sonar.cs.internal.solutionPath", baseDir.resolve("DotNet6Project.sln").toString())
+      // .setModuleKey(SOLUTION1_MODULE_KEY)
+      // .putExtraProperty("sonar.cs.internal.useNet6", "true")
+      // .putExtraProperty("sonar.cs.internal.solutionPath", TEMP.resolve("DotNet6Project.sln").toString())
       .build();
     sonarlintEngine.analyze(analysisConfiguration, issues::add, null, null);
+    System.out.println("++++++++++++++++++++++");
+    System.out.println(issues);
+    assertThat(issues)
+      .extracting(Issue::getRuleKey, Issue::getMessage, Issue::getStartLine, Issue::getStartLineOffset, Issue::getEndLine, Issue::getEndLineOffset, i -> i.getInputFile().getPath(),
+        Issue::getSeverity)
+      .contains(
+        tuple("csharpsquid:S1172", "Remove this unused method parameter 'a'.", 7, 25, 7, 33, inputFile.getPath(), MAJOR));
 
+    var issue = issues.stream().filter(i -> i.getRuleKey().equals("csharpsquid:S1172")).findFirst().get();
+    assertThat(issue.quickFixes()).hasSize(1);
+    assertThat(issue.quickFixes().get(0).message()).isEqualTo("Remove unused parameter");
+    assertThat(issue.quickFixes().get(0).inputFileEdits()).hasSize(1);
+    assertThat(issue.quickFixes().get(0).inputFileEdits().get(0).target().uri()).isEqualTo(inputFile.uri());
+    assertThat(issue.quickFixes().get(0).inputFileEdits().get(0).textEdits()).hasSize(1);
+    assertThat(issue.quickFixes().get(0).inputFileEdits().get(0).textEdits().get(0).range().getStartLine()).isEqualTo(7);
+    assertThat(issue.quickFixes().get(0).inputFileEdits().get(0).textEdits().get(0).range().getStartLineOffset()).isEqualTo(25);
+    assertThat(issue.quickFixes().get(0).inputFileEdits().get(0).textEdits().get(0).range().getEndLine()).isEqualTo(7);
+    assertThat(issue.quickFixes().get(0).inputFileEdits().get(0).textEdits().get(0).range().getEndLineOffset()).isEqualTo(33);
+    assertThat(issue.quickFixes().get(0).inputFileEdits().get(0).textEdits().get(0).newText()).isEmpty();
+  }
+
+  @Test
+  void provideQuickFixesCustom(@TempDir Path tmpDir) throws Exception {
+    // Path baseDir = prepareTestSolutionAndRestore(tmpDir, "DotNet6Project");
+    TEMP = Paths.get("/workspaces/sonarlint-omnisharp/its/src/test/projects/DotNet6Project");
+    File baseDir = TEMP.toFile();
+    System.out.println("HIIIIIII");
+    System.out.println(TEMP);
+    System.out.println(baseDir);
+    ClientInputFile inputFile = prepareInputFile(baseDir.toPath(), "DotNet6Project/Program.cs",
+      "using System;\n"
+        + "\n"
+        + "namespace ConsoleApp1\n"
+        + "{\n"
+        + "    class Program\n"
+        + "    {\n"
+        + "        private void Foo(string a)\n"
+        + "        {\n"
+        + "            Console.WriteLine(\"Hello World!\");\n"
+        + "        }\n"
+        + "    }\n"
+        + "}",
+      false);
+
+    final List<Issue> issues = new ArrayList<>();
+    StandaloneAnalysisConfiguration analysisConfiguration = StandaloneAnalysisConfiguration.builder()
+      .setBaseDir(baseDir.toPath())
+      .addInputFile(inputFile)
+      // .setModuleKey(SOLUTION1_MODULE_KEY)
+      // .putExtraProperty("sonar.cs.internal.useNet6", "true")
+      // .putExtraProperty("sonar.cs.internal.solutionPath", TEMP.resolve("DotNet6Project.sln").toString())
+      .build();
+    sonarlintEngine.analyze(analysisConfiguration, issues::add, null, null);
+    System.out.println("++++++++++++++++++++++");
+    System.out.println(issues);
     assertThat(issues)
       .extracting(Issue::getRuleKey, Issue::getMessage, Issue::getStartLine, Issue::getStartLineOffset, Issue::getEndLine, Issue::getEndLineOffset, i -> i.getInputFile().getPath(),
         Issue::getSeverity)
@@ -1007,6 +1069,9 @@ class OmnisharpIntegrationTests {
     Path baseDir = tmpDir.toRealPath().resolve(name);
     Files.createDirectories(baseDir);
     FileUtils.copyDirectory(new File("src/test/projects/" + name), baseDir.toFile());
+    System.out.println("BIIIII");
+    System.out.println(name);
+    System.out.println(baseDir);
     return baseDir;
   }
 
@@ -1026,6 +1091,12 @@ class OmnisharpIntegrationTests {
       fail("Unable to run dotnet restore");
     }
   }
+  public static Path TEMP = Paths.get("/tmp");
+  private static ClientInputFile prepareInputFile(String relativePath, String content, final boolean isTest) throws IOException {
+    File file = new File(TEMP.toFile(), relativePath);
+    FileUtils.write(file, content, StandardCharsets.UTF_8);
+    return createInputFile(file.toPath(), relativePath, isTest);
+  }
 
   private ClientInputFile prepareInputFile(Path baseDir, String relativePath, @Nullable String content, final boolean isTest) throws IOException {
     final File file = new File(baseDir.toFile(), relativePath);
@@ -1033,6 +1104,51 @@ class OmnisharpIntegrationTests {
       FileUtils.write(file, content, StandardCharsets.UTF_8);
     }
     return createInputFile(baseDir, file.toPath(), isTest);
+  }
+  private static ClientInputFile createInputFile(final Path path, String relativePath, final boolean isTest) {
+    return new ClientInputFile() {
+
+      @Override
+      public String getPath() {
+        return path.toString();
+      }
+
+      @Override
+      public boolean isTest() {
+        return isTest;
+      }
+
+      @Override
+      public Charset getCharset() {
+        return StandardCharsets.UTF_8;
+      }
+
+      @Override
+      public <G> G getClientObject() {
+        return null;
+      }
+
+      @Override
+      public InputStream inputStream() throws IOException {
+        return Files.newInputStream(path);
+      }
+
+      @Override
+      public String contents() throws IOException {
+        return new String(Files.readAllBytes(path), StandardCharsets.UTF_8);
+      }
+
+      @Override
+      public String relativePath() {
+        return relativePath;
+      }
+
+      @Override
+      public URI uri() {
+        return path.toUri();
+      }
+
+    };
   }
 
   private ClientInputFile createInputFile(Path baseDir, final Path path, final boolean isTest) {

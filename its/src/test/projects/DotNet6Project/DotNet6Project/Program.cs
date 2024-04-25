@@ -1,4 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
+using System;
 
-// TODO foo
-Console.WriteLine("Hello, World!");
+namespace ConsoleApp1
+{
+    class Program
+    {
+        private void Foo(string a)
+        {
+            Console.WriteLine("Hello World!");
+        }
+    }
+}
